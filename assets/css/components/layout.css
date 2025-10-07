@@ -1,0 +1,16 @@
+/* Header */
+
+.header {
+  padding: 16px 0;
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.header__logo {
+  height: 48px;
+}
+
+/* /Header */

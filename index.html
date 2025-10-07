@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dropdown Header nav</title>
+    <title>WIECK &#8211; Corporate comms&#039; best-kept secret</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,46 +56,62 @@
 
         <!-- Main nav -->
         <nav class="nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Home</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">In Memory of James F. Wieck</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link">In Memory of James F. Wieck</a>
             </li>
             <!-- Main nav Submenu -->
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Services</a>
-              <ul class="main-nav__submenu">
-                <li class="main-nav__submenu__item">
-                  <a href="#" class="main-nav__submenu__link"
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link">
+                <span>Services</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="nav__item__icon icon-sm"
+                >
+                  <path
+                    d="M3 10L8 5L13 10"
+                    stroke="#414552"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu__item">
+                  <a href="#" class="nav__submenu__link"
                     >Enterprise Newsrooms</a
                   >
                 </li>
-                <li class="main-nav__submenu__item">
-                  <a href="#" class="main-nav__submenu__link"
+                <li class="nav__submenu__item">
+                  <a href="#" class="nav__submenu__link"
                     >Digital Asset Management</a
                   >
                 </li>
-                <li class="main-nav__submenu__item">
-                  <a href="#" class="main-nav__submenu__link">WIECK Desk</a>
+                <li class="nav__submenu__item">
+                  <a href="#" class="nav__submenu__link">WIECK Desk</a>
                 </li>
-                <li class="main-nav__submenu__item">
-                  <a href="#" class="main-nav__submenu__link"
-                    >Custom Development</a
-                  >
+                <li class="nav__submenu__item">
+                  <a href="#" class="nav__submenu__link">Custom Development</a>
                 </li>
               </ul>
             </li>
             <!-- /Main nav Submenu -->
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">About Us</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Contact Us</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact Us</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Privacy Policy</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Privacy Policy</a>
             </li>
           </ul>
         </nav>
@@ -104,14 +120,19 @@
         <!-- Mobile nav -->
         <nav class="mobile-nav">
           <input type="checkbox" id="toggle-nav" class="mobile-nav__checkbox" />
-          <label class="mobile-nav__button" role="button" for="toggle-nav">
+          <label
+            class="mobile-nav__button size-48"
+            role="button"
+            for="toggle-nav"
+          >
+            <!-- Open icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              class="mobile-nav__button__icon mobile-nav__button__icon--open"
+              class="mobile-nav__icon mobile-nav__icon--open icon"
             >
               <path
                 d="M3.75 12H20.25"
@@ -135,13 +156,15 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <!-- /Open icon -->
+            <!-- Close icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              class="mobile-nav__button__icon mobile-nav__button__icon--close"
+              class="mobile-nav__icon mobile-nav__icon--close icon"
             >
               <path
                 d="M18.75 5.25L5.25 18.75"
@@ -158,6 +181,7 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <!-- /Close icon -->
           </label>
           <ul class="mobile-nav__list">
             <li class="mobile-nav__item">
@@ -181,7 +205,7 @@
                   height="16"
                   viewBox="0 0 16 16"
                   fill="none"
-                  class="mobile-nav__submenu__icon"
+                  class="mobile-nav__submenu__icon icon-sm"
                 >
                   <path
                     d="M13 6L8 11L3 6"

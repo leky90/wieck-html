@@ -3,9 +3,35 @@
   --font-family-primary: Inter, sans-serif;
   --font-family-secondary: Inter, sans-serif;
 
-  --font-size-body: 16px;
-  --line-height-body: 1.5;
+  --body-font-size: 16px;
+  --body-line-height: 24px;
 
-  --font-body: 400 var(--font-size-body) / var(--line-height-body)
+  --heading-font-size: 32px;
+  --heading-line-height: 40px;
+
+  --heading-2-font-size: 24px;
+  --heading-2-line-height: 32px;
+
+  --heading-3-font-size: 20px;
+  --heading-3-line-height: 28px;
+
+  --subheading-font-size: 16px;
+  --subheading-line-height: 24px;
+
+  --font-body: 400 var(--body-font-size) / var(--body-line-height)
     var(--font-family-primary);
+
+  @media (min-width: 760px) {
+    --heading-font-size: 48px;
+    --heading-line-height: 56px;
+
+    --heading-2-font-size: 40px;
+    --heading-2-line-height: 48px;
+
+    --heading-3-font-size: 32px;
+    --heading-3-line-height: 40px;
+
+    --subheading-font-size: 18px;
+    --subheading-line-height: 26px;
+  }
 }

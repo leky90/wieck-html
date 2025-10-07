@@ -2,11 +2,11 @@
 
 .header {
   padding: 16px 0;
-  background: var(--bg);
+  background: var(--color-white);
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .header__logo {

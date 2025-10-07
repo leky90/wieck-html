@@ -7,3 +7,27 @@
 
 /* Utility imports */
 @import url("./css/utilities.css");
+
+/* Custom styles */
+.hero-section {
+  padding-top: 48px;
+}
+
+.service-card {
+  padding: 24px;
+  border-radius: 4px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  .hero-section {
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* desktop */
+  .hero-section {
+    padding-top: 80px;
+  }
+}

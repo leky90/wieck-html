@@ -2,22 +2,28 @@
   /* Container max-widths */
   --container-max: 1200px;
   --container-padding: 16px;
-}
 
-@media (min-width: 760px) {
-  /* tablet */
-  :root {
-    --container-padding: 32px;
+  /* Section padding */
+  --section-padding: 48px 0;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  @media (min-width: 760px) {
+    /* tablet */
+    :root {
+      --container-padding: 32px;
+      --section-padding: 64px 0;
+    }
   }
-}
-@media (min-width: 1440px) {
-  /* desktop */
-  :root {
-    --container-padding: 0;
-  }
-}
-@media (min-width: 1920px) {
-  /* desktop xl */
-  :root {
+  @media (min-width: 1440px) {
+    /* desktop */
+    :root {
+      --container-padding: 0;
+      --section-padding: 80px 0;
+    }
   }
 }

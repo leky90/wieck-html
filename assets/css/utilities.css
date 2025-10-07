@@ -5,6 +5,10 @@
   padding: 0 var(--container-padding);
 }
 
+.section {
+  padding: var(--section-padding);
+}
+
 .flex {
   display: flex;
 }
@@ -15,6 +19,10 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+.grid {
+  display: grid;
 }
 
 /* Alignment Utilities */
@@ -39,6 +47,56 @@
   align-items: flex-start;
 }
 
+/* Grid utilities */
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Spacing utilities */
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+.my-sm {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.my-md {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.my-lg {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.my-xl {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* /Spacing utilities */
+
 /* Display Utilities */
 
 .hidden {
@@ -56,12 +114,12 @@
   height: 24px;
 }
 
-.icon-sm {
+.icon-16 {
   width: 16px;
   height: 16px;
 }
 
-.icon-lg {
+.icon-32 {
   width: 32px;
   height: 32px;
 }
@@ -91,3 +149,65 @@
 }
 
 /* /Size utilities */
+
+/* Typography utilities */
+
+.heading {
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-height);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.heading-2 {
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.heading-3 {
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.subheading {
+  font-size: var(--subheading-font-size);
+  line-height: var(--subheading-line-height);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.text-body {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.text-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* /Typography utilities */
+
+/* Color utilities */
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-primary {
+  color: var(--color-gray-950);
+}
+
+.text-secondary {
+  color: var(--color-gray-800);
+}
+
+.text-link {
+  color: var(--color-gray-950);
+}
+
+/* /Color utilities */

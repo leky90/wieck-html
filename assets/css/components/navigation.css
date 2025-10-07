@@ -13,7 +13,6 @@
 }
 
 .nav__item--has-submenu {
-  position: relative;
 }
 
 .nav__item__icon {
@@ -35,22 +34,22 @@
 }
 
 .nav__item:hover .nav__link {
-  border-bottom: 1px solid var(--border-brand);
-  color: var(--text-brand);
+  border-bottom: 1px solid var(--color-brand);
+  color: var(--color-brand);
 }
 
 .nav__submenu {
   position: absolute;
   top: 100%;
-  left: 0;
   width: 320px;
   padding: 0;
+  margin-top: 1px;
   list-style: none;
   display: none;
   flex-direction: column;
   gap: 2px;
   box-shadow: var(--shadow-md);
-  background: var(--bg);
+  background: var(--color-white);
 }
 
 .nav__item:hover .nav__submenu {
@@ -65,8 +64,8 @@
 }
 
 .nav__submenu__link:hover {
-  color: var(--text-brand);
-  border-bottom: 1px solid var(--border-brand);
+  color: var(--color-brand);
+  border-bottom: 1px solid var(--color-brand);
 }
 
 /* /Main nav */
@@ -95,7 +94,7 @@
 .mobile-nav__button:hover {
   cursor: pointer;
   padding: 12px;
-  background: var(--bg-primary);
+  background: var(--color-gray-100);
 }
 
 .mobile-nav__checkbox {
@@ -103,7 +102,7 @@
 }
 
 .mobile-nav__checkbox:checked + .mobile-nav__button {
-  background: var(--bg-primary);
+  background: var(--color-gray-100);
 }
 
 .mobile-nav__checkbox:checked + .mobile-nav__button .mobile-nav__icon--open {
@@ -124,7 +123,7 @@
   left: 0;
   width: 100%;
   box-shadow: var(--shadow-lg);
-  background: var(--bg);
+  background: var(--color-white);
   flex-direction: column;
   gap: 2px;
 }
@@ -162,8 +161,8 @@
 }
 
 .mobile-nav__item--has-submenu:has(input:checked) .mobile-nav__link {
-  border-bottom: 1px solid var(--border-brand);
-  color: var(--text-brand);
+  border-bottom: 1px solid var(--color-brand);
+  color: var(--color-brand);
 }
 
 .mobile-nav__item--has-submenu:has(input:checked) .mobile-nav__submenu {
@@ -189,7 +188,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: var(--text-secondary);
+  color: var(--color-gray-800);
 }
 /* /Mobile nav */
 

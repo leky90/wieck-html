@@ -1,0 +1,23 @@
+:root {
+  /* Container max-widths */
+  --container-max: 1200px;
+  --container-padding: 16px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  :root {
+    --container-padding: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  /* desktop */
+  :root {
+    --container-padding: 0;
+  }
+}
+@media (min-width: 1920px) {
+  /* desktop xl */
+  :root {
+  }
+}

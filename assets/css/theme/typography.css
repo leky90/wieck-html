@@ -1,0 +1,11 @@
+/* Typography */
+:root {
+  --font-family-primary: Inter, sans-serif;
+  --font-family-secondary: Inter, sans-serif;
+
+  --font-size-body: 16px;
+  --line-height-body: 1.5;
+
+  --font-body: 400 var(--font-size-body) / var(--line-height-body)
+    var(--font-family-primary);
+}

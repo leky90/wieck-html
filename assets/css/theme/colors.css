@@ -1,0 +1,52 @@
+:root {
+  /* Container max-widths */
+  --container-max: 1200px;
+  --container-padding: 16px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-brand: #006e9e;
+
+  --color-gray-100: #f1f3f3;
+  --color-gray-200: #d8dadc;
+  --color-gray-800: #414552;
+  --color-gray-950: #191e29;
+
+  /* Text Colors */
+  --text-brand: var(--color-brand);
+  --text-primary: var(--color-gray-950);
+  --text-secondary: var(--color-gray-800);
+
+  --text-link: var(--color-gray-950);
+
+  /* Background Colors */
+  --bg: var(--color-white);
+  --bg-primary: var(--color-gray-100);
+  --fg-primary: var(--color-gray-950);
+  --bg-secondary: var(--color-gray-200);
+  --fg-secondary: var(--color-gray-800);
+
+  /* Border Colors */
+  --border-primary: var(--color-gray-200);
+  --border-brand: var(--color-brand);
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  :root {
+    --container-padding: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  /* desktop */
+  :root {
+    --container-padding: 0;
+  }
+}
+@media (min-width: 1920px) {
+  /* desktop xl */
+  :root {
+  }
+}

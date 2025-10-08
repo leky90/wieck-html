@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
@@ -67,22 +72,7 @@
             <li class="nav__item nav__item--has-submenu">
               <a href="#" class="nav__link">
                 <span>Services</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  class="nav__item__icon icon-16"
-                >
-                  <path
-                    d="M3 10L8 5L13 10"
-                    stroke="#414552"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <i class="ph ph-caret-down nav__item__icon icon-16"></i>
               </a>
               <ul class="nav__submenu">
                 <li class="nav__submenu__item">
@@ -126,129 +116,76 @@
             for="toggle-nav"
           >
             <!-- Open icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              class="mobile-nav__icon mobile-nav__icon--open icon"
-            >
-              <path
-                d="M3.75 12H20.25"
-                stroke="#191E29"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3.75 6H20.25"
-                stroke="#191E29"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3.75 18H20.25"
-                stroke="#191E29"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <i
+              class="ph ph-list mobile-nav__icon mobile-nav__icon--open icon"
+            ></i>
             <!-- /Open icon -->
             <!-- Close icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              class="mobile-nav__icon mobile-nav__icon--close icon"
-            >
-              <path
-                d="M18.75 5.25L5.25 18.75"
-                stroke="#191E29"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18.75 18.75L5.25 5.25"
-                stroke="#191E29"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <i
+              class="ph ph-x mobile-nav__icon mobile-nav__icon--close icon"
+            ></i>
             <!-- /Close icon -->
           </label>
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link">Home</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link"
-                >In Memory of James F. Wieck</a
-              >
-            </li>
-            <!-- Mobile Submenu -->
-            <li class="mobile-nav__item mobile-nav__item--has-submenu">
-              <label class="mobile-nav__link" role="button">
-                <input type="checkbox" />
-
-                <span>Services</span>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  class="mobile-nav__submenu__icon icon-16"
+          <div class="mobile-nav__content">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Home</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link"
+                  >In Memory of James F. Wieck</a
                 >
-                  <path
-                    d="M13 6L8 11L3 6"
-                    stroke="#414552"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </label>
+              </li>
+              <!-- Mobile Submenu -->
+              <li class="mobile-nav__item mobile-nav__item--has-submenu">
+                <label class="mobile-nav__link" role="button">
+                  <input type="checkbox" />
 
-              <ul class="mobile-nav__submenu">
-                <li class="mobile-nav__submenu__item">
-                  <a href="#" class="mobile-nav__submenu__link"
-                    >Enterprise Newsrooms</a
-                  >
-                </li>
-                <li class="mobile-nav__submenu__item">
-                  <a href="#" class="mobile-nav__submenu__link"
-                    >Digital Asset Management</a
-                  >
-                </li>
-                <li class="mobile-nav__submenu__item">
-                  <a href="#" class="mobile-nav__submenu__link">WIECK Desk</a>
-                </li>
-                <li class="mobile-nav__submenu__item">
-                  <a href="#" class="mobile-nav__submenu__link"
-                    >Custom Development</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- /Mobile Submenu -->
-            <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link">About Us</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link">Contact Us</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link">Privacy Policy</a>
-            </li>
-          </ul>
+                  <span>Services</span>
+
+                  <i
+                    class="ph ph-caret-down mobile-nav__submenu__icon icon-16"
+                  ></i>
+                </label>
+
+                <ul class="mobile-nav__submenu">
+                  <li class="mobile-nav__submenu__item">
+                    <a href="#" class="mobile-nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a href="#" class="mobile-nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a href="#" class="mobile-nav__submenu__link">WIECK Desk</a>
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a href="#" class="mobile-nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- /Mobile Submenu -->
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">About Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Contact Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Privacy Policy</a>
+              </li>
+            </ul>
+            <div class="mobile-nav__footer">
+              <a href="#" class="button button--fluid button--brand"
+                >Contact Us</a
+              >
+            </div>
+          </div>
         </nav>
         <!-- /Mobile nav -->
       </div>
@@ -266,7 +203,7 @@
             your organzation's growth and innovation needs.
           </p>
           <div class="flex items-center gap-md">
-            <a href="#" class="button button--primary">Contact Us</a>
+            <a href="#" class="button button--brand">Contact Us</a>
             <a href="#" class="button button--secondary">See Success Stories</a>
           </div>
         </div>

@@ -3,16 +3,16 @@
 }
 
 .card--brand {
-  background: var(--color-brand-secondary);
-  color: var(--color-brand);
+  background: var(--bg-brand-secondary);
+  color: var(--text-brand);
 }
 
 .card--primary {
-  background: var(--color-white);
-  color: var(--color-gray-950);
+  background: var(--bg-white);
+  color: var(--text-primary);
 }
 
 .card--secondary {
-  background: var(--color-gray-100);
-  color: var(--color-gray-950);
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }

@@ -75,6 +75,8 @@
   gap: var(--spacing-xl);
 }
 
+/* Margin utilities */
+
 .my-sm {
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
@@ -95,7 +97,71 @@
   margin-bottom: var(--spacing-xl);
 }
 
-/* /Spacing utilities */
+.mx-sm {
+  margin-left: var(--spacing-sm);
+  margin-right: var(--spacing-sm);
+}
+
+.mx-md {
+  margin-left: var(--spacing-md);
+  margin-right: var(--spacing-md);
+}
+
+.mx-lg {
+  margin-left: var(--spacing-lg);
+  margin-right: var(--spacing-lg);
+}
+
+.mx-xl {
+  margin-left: var(--spacing-xl);
+  margin-right: var(--spacing-xl);
+}
+
+/* /Margin utilities */
+
+/* Padding utilities */
+
+.py-sm {
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
+
+.py-md {
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
+.py-lg {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+.py-xl {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.px-sm {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+}
+
+.px-md {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.px-lg {
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+.px-xl {
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
+}
+
+/* /Padding utilities */
 
 /* Display Utilities */
 
@@ -107,21 +173,26 @@
   display: block;
 }
 
+/* /Display Utilities */
+
 /* Icon utilities */
 
 .icon {
   width: 24px;
   height: 24px;
+  font-size: 24px;
 }
 
 .icon-16 {
   width: 16px;
   height: 16px;
+  font-size: 16px;
 }
 
 .icon-32 {
   width: 32px;
   height: 32px;
+  font-size: 32px;
 }
 
 /* /Icon utilities */
@@ -195,19 +266,19 @@
 /* Color utilities */
 
 .text-brand {
-  color: var(--color-brand);
+  color: var(--text-brand);
 }
 
 .text-primary {
-  color: var(--color-gray-950);
+  color: var(--text-primary);
 }
 
 .text-secondary {
-  color: var(--color-gray-800);
+  color: var(--text-secondary);
 }
 
 .text-link {
-  color: var(--color-gray-950);
+  color: var(--text-primary);
 }
 
 /* /Color utilities */

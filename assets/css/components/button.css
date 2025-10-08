@@ -8,20 +8,24 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  background: var(--color-gray-800);
-  color: var(--color-gray-25);
+  background: var(--bg-neutral);
+  color: var(--text-primary-reverse);
   cursor: pointer;
 }
 
-.button--primary {
-  background: var(--color-brand);
-  color: var(--color-gray-25);
+.button--fluid {
+  width: 100%;
+}
+
+.button--brand {
+  background: var(--bg-brand);
+  color: var(--text-primary-reverse);
 }
 
 .button--secondary {
-  background: var(--color-white);
-  color: var(--color-gray-950);
-  outline: 1px solid var(--color-gray-200);
+  background: var(--bg-white);
+  color: var(--text-primary);
+  outline: 1px solid var(--border-primary);
 }
 
 @media (min-width: 760px) {

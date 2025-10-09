@@ -1,3 +1,5 @@
+/* Card */
+
 .card {
   padding: 12px;
   display: flex;
@@ -19,3 +21,5 @@
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+
+/* /Card */

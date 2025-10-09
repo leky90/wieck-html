@@ -175,6 +175,46 @@
 
 /* /Display Utilities */
 
+/* Position utilities */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+/* /Position utilities */
+
 /* Icon utilities */
 
 .icon {
@@ -193,6 +233,12 @@
   width: 32px;
   height: 32px;
   font-size: 32px;
+}
+
+.icon-48 {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
 }
 
 /* /Icon utilities */
@@ -221,6 +267,26 @@
 
 /* /Size utilities */
 
+/* Font utilities */
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* /Font utilities */
+
 /* Typography utilities */
 
 .heading {
@@ -244,9 +310,18 @@
   margin-bottom: 8px;
 }
 
+.heading-4 {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
 .subheading {
   font-size: var(--subheading-font-size);
   line-height: var(--subheading-line-height);
+  color: var(--text-secondary);
   margin: 0;
   margin-bottom: 16px;
 }
@@ -254,11 +329,13 @@
 .text-body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+  margin: 0;
 }
 
-.text-description {
-  font-size: 16px;
-  line-height: 24px;
+.text-stat {
+  font-size: var(--stat-font-size);
+  line-height: var(--stat-line-height);
+  margin: 0;
 }
 
 /* /Typography utilities */
@@ -279,6 +356,38 @@
 
 .text-link {
   color: var(--text-primary);
+}
+
+.bg-brand-primary {
+  background: var(--bg-brand-primary);
+}
+
+.bg-brand-secondary {
+  background: var(--bg-brand-secondary);
+}
+
+.bg-white {
+  background: var(--bg-white);
+}
+
+.bg-primary {
+  background: var(--bg-primary);
+}
+
+.bg-secondary {
+  background: var(--bg-secondary);
+}
+
+.bg-tertiary {
+  background: var(--bg-tertiary);
+}
+
+.bg-quaternary {
+  background: var(--bg-quaternary);
+}
+
+.bg-neutral {
+  background: var(--bg-neutral);
 }
 
 /* /Color utilities */

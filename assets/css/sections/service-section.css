@@ -1,0 +1,21 @@
+/* Service section */
+
+.service-card {
+  padding: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.service-card__icon {
+  margin-bottom: 16px;
+}
+
+.service-card__content {
+  min-height: 224px;
+}
+
+.service-card__footer {
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: -24px;
+}

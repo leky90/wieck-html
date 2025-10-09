@@ -3,8 +3,8 @@
   --font-family-primary: Inter, sans-serif;
   --font-family-secondary: Inter, sans-serif;
 
-  --body-font-size: 16px;
-  --body-line-height: 24px;
+  --body-font-size: 14px;
+  --body-line-height: 22px;
 
   --heading-font-size: 32px;
   --heading-line-height: 40px;
@@ -18,10 +18,13 @@
   --subheading-font-size: 16px;
   --subheading-line-height: 24px;
 
-  --font-body: 400 var(--body-font-size) / var(--body-line-height)
-    var(--font-family-primary);
+  --stat-font-size: 48px;
+  --stat-line-height: 56px;
 
   @media (min-width: 760px) {
+    --body-font-size: 16px;
+    --body-line-height: 24px;
+
     --heading-font-size: 48px;
     --heading-line-height: 56px;
 
@@ -34,4 +37,15 @@
     --subheading-font-size: 18px;
     --subheading-line-height: 26px;
   }
+
+  @media (min-width: 1440px) {
+    /* desktop */
+    :root {
+      --stat-font-size: 60px;
+      --stat-line-height: 68px;
+    }
+  }
+
+  --font-body: 400 var(--body-font-size) / var(--body-line-height)
+    var(--font-family-primary);
 }

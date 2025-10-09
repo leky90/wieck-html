@@ -1,0 +1,22 @@
+<svg     
+    xmlns="http://www.w3.org/2000/svg"
+    width="700"
+    height="700"
+    viewBox="0 0 700 700"
+    fill="none"
+>
+    <path d="M700 700V0L0 700H700Z" fill="url(#paint0_linear_1_2204)" />
+    <defs>
+    <linearGradient
+        id="paint0_linear_1_2204"
+        x1="350"
+        y1="0"
+        x2="350"
+        y2="700"
+        gradientUnits="userSpaceOnUse"
+    >
+        <stop stop-color="#B5E2F2" />
+        <stop offset="1" stop-color="#B5E2F2" stop-opacity="0.2" />
+    </linearGradient>
+    </defs>
+</svg>

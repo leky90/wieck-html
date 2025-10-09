@@ -6,6 +6,7 @@
   --color-brand: #006e9e;
   --color-brand-primary: #d6f0f7;
   --color-brand-secondary: #eff9fc;
+  --color-brand-tertiary: #258db5;
 
   --color-error-light: #d92d20;
   --color-error-dark: #f97066;
@@ -32,6 +33,7 @@
   --text-primary: var(--color-gray-950);
   --text-primary-reverse: var(--color-gray-25);
   --text-secondary: var(--color-gray-800);
+  --text-tertiary: var(--color-gray-200);
   --text-disabled: var(--color-gray-500);
   --text-placeholder: var(--color-gray-600);
 
@@ -42,12 +44,13 @@
   --bg-white: var(--color-white);
   --bg-neutral: var(--color-gray-800);
   --bg-primary: var(--color-gray-100);
-  --bg-secondary: var(--color-gray-25);
+  --bg-secondary: var(--color-gray-50);
   --bg-tertiary: var(--color-gray-950);
   --bg-quaternary: var(--color-gray-900);
 
   /* Border Colors */
   --border-brand: var(--color-brand);
+  --border-brand-tertiary: var(--color-brand-tertiary);
   --border-primary: var(--color-gray-200);
   --border-secondary: var(--color-gray-700);
   --border-error: var(--color-error-dark);

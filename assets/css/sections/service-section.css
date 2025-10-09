@@ -24,6 +24,7 @@
 
 .service-card:hover {
   background-color: var(--bg-brand-secondary);
+  box-shadow: var(--shadow-lg);
 }
 
 .service-card:hover .decor {

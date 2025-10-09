@@ -75,6 +75,10 @@
     padding-top: 64px;
   }
 
+  .hero-section .subheading {
+    margin-bottom: 32px;
+  }
+
   .grid-stats {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
@@ -108,5 +112,9 @@
   /* desktop */
   .hero-section {
     padding-top: 80px;
+  }
+
+  .grid-stats {
+    margin-top: -203px;
   }
 }

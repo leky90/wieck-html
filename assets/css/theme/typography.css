@@ -30,7 +30,12 @@
   --caption-font-size: 12px;
   --caption-line-height: 18px;
 
-  @media (min-width: 760px) {
+  --font-body: 400 var(--body-font-size) / var(--body-line-height)
+    var(--font-family-primary);
+}
+
+@media (min-width: 760px) {
+  :root {
     --body-font-size: 16px;
     --body-line-height: 24px;
 
@@ -40,8 +45,8 @@
     --heading-2-font-size: 40px;
     --heading-2-line-height: 48px;
 
-    --heading-3-font-size: 32px;
-    --heading-3-line-height: 40px;
+    --heading-3-font-size: 24px;
+    --heading-3-line-height: 32px;
 
     --heading-4-font-size: 18px;
     --heading-4-line-height: 26px;
@@ -52,15 +57,12 @@
     --subheading-font-size: 18px;
     --subheading-line-height: 26px;
   }
+}
 
-  @media (min-width: 1440px) {
-    /* desktop */
-    :root {
-      --stat-font-size: 60px;
-      --stat-line-height: 68px;
-    }
+@media (min-width: 1232px) {
+  /* desktop */
+  :root {
+    --stat-font-size: 60px;
+    --stat-line-height: 68px;
   }
-
-  --font-body: 400 var(--body-font-size) / var(--body-line-height)
-    var(--font-family-primary);
 }

@@ -34,6 +34,12 @@
   outline: 1px solid var(--border-primary);
 }
 
+.button--icon {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+}
+
 @media (min-width: 760px) {
   /* tablet */
   .button {

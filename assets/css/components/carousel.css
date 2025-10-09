@@ -1,0 +1,82 @@
+/* Carousel */
+
+.carousel {
+  position: relative;
+}
+
+.carousel__prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-8px, -50%);
+}
+
+.carousel__next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(8px, -50%);
+}
+
+.carousel__content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel__content > div {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.carousel__dots {
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.carousel__dot {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__dot span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: var(--bg-neutral);
+  font-size: 0;
+}
+
+.carousel__dot.active span {
+  background-color: var(--bg-brand);
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  .carousel__dots {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .carousel__prev {
+    transform: translate(-80px, -50%);
+  }
+
+  .carousel__next {
+    transform: translate(80px, -50%);
+  }
+}
+
+/* /Carousel */

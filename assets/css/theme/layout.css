@@ -1,6 +1,6 @@
 :root {
   /* Container max-widths */
-  --container-max: 1200px;
+  --container-max: 1232px;
   --container-padding: 16px;
 
   /* Section padding */
@@ -12,18 +12,26 @@
   --spacing-lg: 24px;
   --spacing-xl: 32px;
 
-  @media (min-width: 760px) {
-    /* tablet */
-    :root {
-      --container-padding: 32px;
-      --section-padding: 64px 0;
-    }
+  --spacing-heading: 12px;
+  --spacing-subheading: 24px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  :root {
+    --container-padding: 32px;
+    --section-padding: 80px 0;
+
+    --spacing-heading: 16px;
+    --spacing-subheading: 40px;
   }
-  @media (min-width: 1440px) {
-    /* desktop */
-    :root {
-      --container-padding: 0;
-      --section-padding: 80px 0;
-    }
+}
+@media (min-width: 1232px) {
+  /* desktop */
+  :root {
+    --container-padding: 16px;
+    --section-padding: 96px 0;
+
+    --spacing-subheading: 48px;
   }
 }

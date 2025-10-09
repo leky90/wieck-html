@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--color-white);
+  color: var(--text-white);
   font-size: 14px;
   line-height: 22px;
   margin: 0;
@@ -32,3 +32,37 @@
 }
 
 /* /Partners section */
+
+@media (min-width: 760px) {
+  /* tablet */
+  .grid-partners {
+    margin-top: 40px;
+  }
+
+  .partners-section__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .partner-card {
+    padding: 0;
+  }
+
+  .partner-card img {
+    width: 128px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .grid-partners {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 48px;
+  }
+
+  .partner-card img {
+    width: 160px;
+    height: 80px;
+  }
+}

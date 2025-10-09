@@ -1,12 +1,12 @@
 /* Contact Section */
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 8px;
 }
 
-.contact-form button {
-  margin-top: 8px;
+.contact-form textarea {
+  flex: 1 1 176px;
 }
 
 .contact-info {
@@ -14,7 +14,7 @@
   gap: 16px;
   align-items: center;
   margin-top: 16px;
-  color: var(--color-white);
+  color: var(--text-white);
 }
 
 .contact-info p {
@@ -27,6 +27,43 @@
   font-size: 24px;
   line-height: 32px;
   margin: 0;
+}
+
+.contact-form__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form__right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .contact-form__left {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .contact-section__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  .contact-form {
+    grid-column: span 2;
+  }
 }
 
 /* /Contact Section */

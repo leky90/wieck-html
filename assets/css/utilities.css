@@ -319,14 +319,16 @@
   font-size: var(--heading-font-size);
   line-height: var(--heading-line-height);
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: var(--spacing-heading);
+  max-width: 690px;
 }
 
 .heading-2 {
   font-size: var(--heading-2-font-size);
   line-height: var(--heading-2-line-height);
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: var(--spacing-heading);
+  max-width: 690px;
 }
 
 .heading-3 {
@@ -334,6 +336,7 @@
   line-height: var(--heading-3-line-height);
   margin: 0;
   margin-bottom: 8px;
+  max-width: 690px;
 }
 
 .heading-4 {
@@ -342,6 +345,7 @@
   margin: 0;
   margin-bottom: 4px;
   font-weight: 600;
+  max-width: 690px;
 }
 
 .heading-5 {
@@ -350,6 +354,7 @@
   margin: 0;
   margin-bottom: 4px;
   font-weight: 600;
+  max-width: 690px;
 }
 
 .subheading {
@@ -357,7 +362,8 @@
   line-height: var(--subheading-line-height);
   color: var(--text-secondary);
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: var(--spacing-subheading);
+  max-width: 690px;
 }
 
 .text-body {
@@ -387,7 +393,7 @@
 }
 
 .text-white {
-  color: var(--color-white);
+  color: var(--text-white);
 }
 
 .text-primary {

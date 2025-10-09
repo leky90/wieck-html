@@ -21,6 +21,7 @@
   --color-gray-50: #f6f7fa;
   --color-gray-100: #f1f3f3;
   --color-gray-200: #d8dadc;
+  --color-gray-400: #a6a8ae;
   --color-gray-500: #8c9097;
   --color-gray-600: #6b6f77;
   --color-gray-700: #5a5e69;
@@ -29,6 +30,7 @@
   --color-gray-950: #191e29;
 
   /* Text Colors */
+  --text-white: var(--color-white);
   --text-brand: var(--color-brand);
   --text-primary: var(--color-gray-950);
   --text-primary-reverse: var(--color-gray-25);
@@ -36,7 +38,7 @@
   --text-secondary-reverse: var(--color-gray-200);
   --text-tertiary: var(--color-gray-200);
   --text-disabled: var(--color-gray-500);
-  --text-placeholder: var(--color-gray-600);
+  --text-placeholder: var(--color-gray-400);
 
   /* Background Colors */
   --bg-brand: var(--color-brand);

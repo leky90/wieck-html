@@ -6,6 +6,7 @@
     <title>WIECK &#8211; Corporate comms&#039; best-kept secret</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="robots" content="noindex, nofollow" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -38,35 +39,39 @@
             </li>
             <!-- Main nav Submenu -->
             <li class="nav__item nav__item--has-submenu">
-              <a href="#" class="nav__link">
+              <a href="#services" class="nav__link">
                 <span>Services</span>
                 <i class="ph-thin ph-caret-down nav__item__icon icon-16"></i>
               </a>
-              <ul class="nav__submenu">
-                <li class="nav__submenu__item">
-                  <a href="#" class="nav__submenu__link"
-                    >Enterprise Newsrooms</a
-                  >
-                </li>
-                <li class="nav__submenu__item">
-                  <a href="#" class="nav__submenu__link"
-                    >Digital Asset Management</a
-                  >
-                </li>
-                <li class="nav__submenu__item">
-                  <a href="#" class="nav__submenu__link">WIECK Desk</a>
-                </li>
-                <li class="nav__submenu__item">
-                  <a href="#" class="nav__submenu__link">Custom Development</a>
-                </li>
-              </ul>
+              <nav class="nav__submenu">
+                <ul class="nav__submenu__list">
+                  <li class="nav__submenu__item">
+                    <a href="#" class="nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="#" class="nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="#" class="nav__submenu__link">WIECK Desk</a>
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="#" class="nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </li>
             <!-- /Main nav Submenu -->
             <li class="nav__item">
               <a href="#" class="nav__link">About Us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact Us</a>
+              <a href="#contact-us" class="nav__link">Contact Us</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Privacy Policy</a>
@@ -165,7 +170,7 @@
         <img
           src="assets/decor/decor-rectangle.svg"
           alt="Decor"
-          class="bg-decor bg-decor__right"
+          class="bg-decor"
         />
         <div class="container z-10 relative">
           <h1 class="heading">Simplify Your Newsroom, Ship Content Faster</h1>
@@ -181,7 +186,10 @@
           <!-- Stats -->
           <div class="grid-stats">
             <!-- Stat Card -->
-            <div class="card card--white card-stat">
+            <div
+              class="card card--white card-stat"
+              style="--image: url(/assets/images/stat-1.jpg)"
+            >
               <p class="text-stat">32M</p>
               <h5 class="heading-5">Page Views</h5>
               <p class="text-body">Last 12 months</p>
@@ -193,7 +201,10 @@
             </div>
             <!-- /Stat Card -->
             <!-- Stat Card -->
-            <div class="card card--white card-stat">
+            <div
+              class="card card--white card-stat"
+              style="--image: url(/assets/images/stat-1.jpg)"
+            >
               <p class="text-stat">14.5M</p>
               <h5 class="heading-5">New Users</h5>
               <p class="text-body">Last 12 months</p>
@@ -205,7 +216,10 @@
             </div>
             <!-- /Stat Card -->
             <!-- Stat Card -->
-            <div class="card card--white card-stat">
+            <div
+              class="card card--white card-stat"
+              style="--image: url(/assets/images/stat-1.jpg)"
+            >
               <p class="text-stat">20M</p>
               <h5 class="heading-5">Sessions</h5>
               <p class="text-body">Last 12 months</p>
@@ -223,7 +237,7 @@
       <!-- /Hero section -->
 
       <!-- Services section -->
-      <section class="section">
+      <section class="section" id="services">
         <div class="container">
           <h2 class="heading-2">What We Do</h2>
           <p class="subheading">
@@ -231,83 +245,114 @@
             complete technology stack for modern media organizations.
           </p>
           <!-- Services -->
-          <div class="grid gap-md">
+          <div class="grid-services">
             <!-- Service Card -->
-            <div class="card card--primary service-card">
-              <div class="service-card__content">
-                <div class="service-card__icon">
-                  <i class="ph-thin ph-newspaper icon-48 text-brand"></i>
-                </div>
-                <h3 class="heading-3">Enterprise Newsrooms</h3>
-                <p class="subheading">
-                  Tailored newsroom solutions with advanced CMS capabilities,
-                  editorial workflows, and multi-platform publishing.
-                </p>
-              </div>
-              <div class="service-card__footer">
+            <a href="#">
+              <div class="card card--primary service-card relative">
                 <img
-                  src="assets/images/service-1.jpg"
-                  alt="Enterprise Newsrooms"
+                  src="assets/decor/decor-square.svg"
+                  alt="Decor"
+                  class="decor"
                 />
+                <div class="service-card__content relative z-10">
+                  <div class="service-card__icon">
+                    <i class="ph-thin ph-newspaper icon-48 text-brand"></i>
+                  </div>
+                  <h4>Enterprise Newsrooms</h4>
+                  <p class="text-body text-secondary">
+                    Tailored newsroom solutions with advanced CMS capabilities,
+                    editorial workflows, and multi-platform publishing.
+                  </p>
+                </div>
+                <div class="service-card__footer">
+                  <img
+                    src="assets/images/service-1.jpg"
+                    alt="Enterprise Newsrooms"
+                  />
+                </div>
               </div>
-            </div>
+            </a>
             <!-- /Service Card -->
             <!-- Service Card -->
-            <div class="card card--primary service-card">
-              <div class="service-card__content">
-                <div class="service-card__icon">
-                  <i class="ph-thin ph-gear icon-48 text-brand"></i>
-                </div>
-                <h3 class="heading-3">Digital Asset Management</h3>
-                <p class="subheading">
-                  Centralized media library with AI-powered tagging, version
-                  control, and seamless integration capabilities.
-                </p>
-              </div>
-              <div class="service-card__footer">
+            <a href="#">
+              <div class="card card--primary service-card relative">
                 <img
-                  src="assets/images/service-2.jpg"
-                  alt="Digital Asset Management"
+                  src="assets/decor/decor-square.svg"
+                  alt="Decor"
+                  class="decor"
                 />
+                <div class="service-card__content relative z-10">
+                  <div class="service-card__icon">
+                    <i class="ph-thin ph-gear icon-48 text-brand"></i>
+                  </div>
+                  <h4>Digital Asset Management</h4>
+                  <p class="text-body text-secondary">
+                    Centralized media library with AI-powered tagging, version
+                    control, and seamless integration capabilities.
+                  </p>
+                </div>
+                <div class="service-card__footer">
+                  <img
+                    src="assets/images/service-2.jpg"
+                    alt="Digital Asset Management"
+                  />
+                </div>
               </div>
-            </div>
+            </a>
             <!-- /Service Card -->
             <!-- Service Card -->
-            <div class="card card--primary service-card">
-              <div class="service-card__content">
-                <div class="service-card__icon">
-                  <i class="ph-thin ph-desktop icon-48 text-brand"></i>
-                </div>
-                <h3 class="heading-3">WIECK Desk</h3>
-                <p class="subheading">
-                  Integrated newsroom desk solution for real-time collaboration,
-                  assignment management, and editorial oversight.
-                </p>
-              </div>
-              <div class="service-card__footer">
-                <img src="assets/images/service-3.jpg" alt="WIECK Desk" />
-              </div>
-            </div>
-            <div class="card card--primary service-card">
-              <div class="service-card__content">
-                <div class="service-card__icon">
-                  <i
-                    class="ph-thin ph-chart-bar-horizontal icon-48 text-brand"
-                  ></i>
-                </div>
-                <h3 class="heading-3">Custom Development</h3>
-                <p class="subheading">
-                  Comprehensive performance tracking with audience insights,
-                  engagement metrics, and predictive analytics.
-                </p>
-              </div>
-              <div class="service-card__footer">
+            <a href="#">
+              <div class="card card--primary service-card relative">
                 <img
-                  src="assets/images/service-4.jpg"
-                  alt="Custom Development"
+                  src="assets/decor/decor-square.svg"
+                  alt="Decor"
+                  class="decor"
                 />
+                <div class="service-card__content relative z-10">
+                  <div class="service-card__icon">
+                    <i class="ph-thin ph-desktop icon-48 text-brand"></i>
+                  </div>
+                  <h4>WIECK Desk</h4>
+                  <p class="text-body text-secondary">
+                    Integrated newsroom desk solution for real-time
+                    collaboration, assignment management, and editorial
+                    oversight.
+                  </p>
+                </div>
+                <div class="service-card__footer">
+                  <img src="assets/images/service-3.jpg" alt="WIECK Desk" />
+                </div>
               </div>
-            </div>
+            </a>
+            <!-- /Service Card -->
+            <!-- Service Card -->
+            <a href="#">
+              <div class="card card--primary service-card relative">
+                <img
+                  src="assets/decor/decor-square.svg"
+                  alt="Decor"
+                  class="decor"
+                />
+                <div class="service-card__content relative z-10">
+                  <div class="service-card__icon">
+                    <i
+                      class="ph-thin ph-chart-bar-horizontal icon-48 text-brand"
+                    ></i>
+                  </div>
+                  <h4>Custom Development</h4>
+                  <p class="text-body text-secondary">
+                    Comprehensive performance tracking with audience insights,
+                    engagement metrics, and predictive analytics.
+                  </p>
+                </div>
+                <div class="service-card__footer">
+                  <img
+                    src="assets/images/service-4.jpg"
+                    alt="Custom Development"
+                  />
+                </div>
+              </div>
+            </a>
             <!-- /Service Card -->
           </div>
           <!-- /Services -->
@@ -316,7 +361,7 @@
       <!-- /Services section -->
 
       <!-- Success Stories section -->
-      <section class="section bg-secondary">
+      <section class="section bg-primary">
         <div class="container">
           <h2 class="heading-2">Success Stories</h2>
           <p class="subheading">
@@ -325,64 +370,227 @@
           </p>
           <!-- Success Story Carousel -->
           <div class="carousel">
-            <!-- Success Story Card -->
-            <div class="card card--white success-story-card">
-              <div class="success-story-card__logo">
-                <img
-                  src="assets/images/boltshift-logo.svg"
-                  alt="Boltshift"
-                  width="124"
-                />
-              </div>
+            <!-- Carousel Nav -->
+            <button
+              class="carousel__prev button button--icon button--secondary"
+            >
+              <i class="ph-thin ph-arrow-left icon"></i>
+            </button>
+            <button
+              class="carousel__next button button--icon button--secondary"
+            >
+              <i class="ph-thin ph-arrow-right icon"></i>
+            </button>
+            <!-- /Carousel Nav -->
 
-              <div class="success-story-card__content">
-                <h3 class="heading-3">300% Increase in Publishing Speed</h3>
-                <p class="subheading">
-                  Transformed their entire newsroom workflow, reducing story
-                  publication time from hours to minutes while maintaining
-                  editorial quality.
-                </p>
-                <div
-                  class="card card--brand success-story-card__content__stats"
-                >
-                  <div class="grid grid-2 gap-lg">
-                    <div>
-                      <h4 class="heading-3 text-brand">300%</h4>
-                      <p class="text-body text-brand">Faster Publishing</p>
+            <!-- Carousel Content -->
+            <div class="carousel__content">
+              <!-- Success Story Card -->
+              <div class="card card--white success-story-card">
+                <div class="success-story-card__left">
+                  <div class="success-story-card__logo">
+                    <img
+                      src="assets/images/boltshift-logo.svg"
+                      alt="Boltshift"
+                      width="124"
+                    />
+                  </div>
+
+                  <div class="success-story-card__content">
+                    <h3 class="success-story-card__heading">
+                      300% Increase in Publishing Speed
+                    </h3>
+                    <p class="subheading">
+                      Transformed their entire newsroom workflow, reducing story
+                      publication time from hours to minutes while maintaining
+                      editorial quality.
+                    </p>
+                    <div
+                      class="card card--brand success-story-card__content__stats"
+                    >
+                      <div class="grid grid-2 gap-lg">
+                        <div>
+                          <h4 class="heading-3 text-brand">300%</h4>
+                          <p class="text-body text-brand">Faster Publishing</p>
+                        </div>
+                        <div>
+                          <h4 class="heading-3 text-brand">85%</h4>
+                          <p class="text-body text-brand">Cost Reduction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="success-story-card__image">
+                  <img
+                    src="assets/images/success-story-1.png"
+                    alt="Success Story 1"
+                  />
+                </div>
+
+                <div class="success-story-card__right">
+                  <blockquote>
+                    WIECK's platform has completely revolutionized our newsroom
+                    workflow. We’ve gone from a chaotic, paper-based system to a
+                    streamlined digital operation that allows our journalists to
+                    focus on what they do best - telling stories.
+                  </blockquote>
+
+                  <div class="success-story-card__author">
+                    <div class="success-story-card__author__image">
+                      <img src="assets/images/author-1.png" alt="Author 1" />
                     </div>
                     <div>
-                      <h4 class="heading-3 text-brand">85%</h4>
-                      <p class="text-body text-brand">Cost Reduction</p>
+                      <h5 class="heading-5 text-primary">Sarah Johnson</h5>
+                      <p class="text-body text-secondary">Editor-in-Chief</p>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- /Success Story Card -->
+              <!-- Success Story Card -->
+              <div class="card card--white success-story-card">
+                <div class="success-story-card__left">
+                  <div class="success-story-card__logo">
+                    <img
+                      src="assets/images/boltshift-logo.svg"
+                      alt="Boltshift"
+                      width="124"
+                    />
+                  </div>
 
-              <div class="success-story-card__image">
-                <img
-                  src="assets/images/success-story-1.jpg"
-                  alt="Success Story 1"
-                />
-              </div>
-
-              <blockquote>
-                WIECK's platform has completely revolutionized our newsroom
-                workflow. We’ve gone from a chaotic, paper-based system to a
-                streamlined digital operation that allows our journalists to
-                focus on what they do best - telling stories.
-              </blockquote>
-
-              <div class="success-story-card__author">
-                <div class="success-story-card__author__image">
-                  <img src="assets/images/author-1.png" alt="Author 1" />
+                  <div class="success-story-card__content">
+                    <h3 class="success-story-card__heading">
+                      300% Increase in Publishing Speed
+                    </h3>
+                    <p class="subheading">
+                      Transformed their entire newsroom workflow, reducing story
+                      publication time from hours to minutes while maintaining
+                      editorial quality.
+                    </p>
+                    <div
+                      class="card card--brand success-story-card__content__stats"
+                    >
+                      <div class="grid grid-2 gap-lg">
+                        <div>
+                          <h4 class="heading-3 text-brand">300%</h4>
+                          <p class="text-body text-brand">Faster Publishing</p>
+                        </div>
+                        <div>
+                          <h4 class="heading-3 text-brand">85%</h4>
+                          <p class="text-body text-brand">Cost Reduction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h5 class="heading-5 text-primary">Sarah Johnson</h5>
-                  <p class="text-body text-secondary">Editor-in-Chief</p>
+
+                <div class="success-story-card__image">
+                  <img
+                    src="assets/images/success-story-1.png"
+                    alt="Success Story 1"
+                  />
+                </div>
+
+                <div class="success-story-card__right">
+                  <blockquote>
+                    WIECK's platform has completely revolutionized our newsroom
+                    workflow. We’ve gone from a chaotic, paper-based system to a
+                    streamlined digital operation that allows our journalists to
+                    focus on what they do best - telling stories.
+                  </blockquote>
+
+                  <div class="success-story-card__author">
+                    <div class="success-story-card__author__image">
+                      <img src="assets/images/author-1.png" alt="Author 1" />
+                    </div>
+                    <div>
+                      <h5 class="heading-5 text-primary">Sarah Johnson</h5>
+                      <p class="text-body text-secondary">Editor-in-Chief</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- /Success Story Card -->
+              <!-- Success Story Card -->
+              <div class="card card--white success-story-card">
+                <div class="success-story-card__left">
+                  <div class="success-story-card__logo">
+                    <img
+                      src="assets/images/boltshift-logo.svg"
+                      alt="Boltshift"
+                      width="124"
+                    />
+                  </div>
+
+                  <div class="success-story-card__content">
+                    <h3 class="success-story-card__heading">
+                      300% Increase in Publishing Speed
+                    </h3>
+                    <p class="subheading">
+                      Transformed their entire newsroom workflow, reducing story
+                      publication time from hours to minutes while maintaining
+                      editorial quality.
+                    </p>
+                    <div
+                      class="card card--brand success-story-card__content__stats"
+                    >
+                      <div class="grid grid-2 gap-lg">
+                        <div>
+                          <h4 class="heading-3 text-brand">300%</h4>
+                          <p class="text-body text-brand">Faster Publishing</p>
+                        </div>
+                        <div>
+                          <h4 class="heading-3 text-brand">85%</h4>
+                          <p class="text-body text-brand">Cost Reduction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="success-story-card__image">
+                  <img
+                    src="assets/images/success-story-1.png"
+                    alt="Success Story 1"
+                  />
+                </div>
+
+                <div class="success-story-card__right">
+                  <blockquote>
+                    WIECK's platform has completely revolutionized our newsroom
+                    workflow. We’ve gone from a chaotic, paper-based system to a
+                    streamlined digital operation that allows our journalists to
+                    focus on what they do best - telling stories.
+                  </blockquote>
+
+                  <div class="success-story-card__author">
+                    <div class="success-story-card__author__image">
+                      <img src="assets/images/author-1.png" alt="Author 1" />
+                    </div>
+                    <div>
+                      <h5 class="heading-5 text-primary">Sarah Johnson</h5>
+                      <p class="text-body text-secondary">Editor-in-Chief</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Success Story Card -->
             </div>
-            <!-- /Success Story Card -->
+            <!-- /Carousel Content -->
+            <!-- Carousel Dots -->
+            <div class="carousel__dots">
+              <label class="carousel__dot active">
+                <span>1</span>
+              </label>
+              <label class="carousel__dot">
+                <span>2</span>
+              </label>
+              <label class="carousel__dot">
+                <span>3</span>
+              </label>
+            </div>
           </div>
           <!-- /Success Story Carousel -->
         </div>
@@ -503,9 +711,9 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     The 3 Biggest Problems Facing Comms Departments in 2020
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -523,10 +731,10 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     Here’s How Live Streaming Could Transform Your Content
                     Distribution
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -548,9 +756,9 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     The 3 Biggest Problems Facing Comms Departments in 2020
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -568,10 +776,30 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     Here’s How Live Streaming Could Transform Your Content
                     Distribution
-                  </h3>
+                  </h5>
+                  <p class="text-body text-secondary text-line-clamp-3">
+                    Smaller budgets, higher expectations, a hyper-political
+                    media environment, a global pandemic—the road for corporate
+                    communications departments hasn’t been easy this year.
+                  </p>
+                </div>
+                <div class="resource-card__image">
+                  <img src="assets/images/resource-1.jpg" alt="Resource 1" />
+                </div>
+              </article>
+            </a>
+            <!-- /Resource Card -->
+            <!-- Resource Card -->
+            <a href="#">
+              <article class="card card--primary resource-card">
+                <div class="resource-card__content">
+                  <p class="text-caption text-secondary">CATEGORY</p>
+                  <h5 class="text-line-clamp-2">
+                    The 3 Biggest Problems Facing Comms Departments in 2020
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -609,30 +837,10 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
-                    The 3 Biggest Problems Facing Comms Departments in 2020
-                  </h3>
-                  <p class="text-body text-secondary text-line-clamp-3">
-                    Smaller budgets, higher expectations, a hyper-political
-                    media environment, a global pandemic—the road for corporate
-                    communications departments hasn’t been easy this year.
-                  </p>
-                </div>
-                <div class="resource-card__image">
-                  <img src="assets/images/resource-1.jpg" alt="Resource 1" />
-                </div>
-              </article>
-            </a>
-            <!-- /Resource Card -->
-            <!-- Resource Card -->
-            <a href="#">
-              <article class="card card--primary resource-card">
-                <div class="resource-card__content">
-                  <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     Here’s How Live Streaming Could Transform Your Content
                     Distribution
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -650,9 +858,9 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     The 3 Biggest Problems Facing Comms Departments in 2020
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -670,10 +878,10 @@
               <article class="card card--primary resource-card">
                 <div class="resource-card__content">
                   <p class="text-caption text-secondary">CATEGORY</p>
-                  <h3 class="heading-3 text-line-clamp-2">
+                  <h5 class="text-line-clamp-2">
                     Here’s How Live Streaming Could Transform Your Content
                     Distribution
-                  </h3>
+                  </h5>
                   <p class="text-body text-secondary text-line-clamp-3">
                     Smaller budgets, higher expectations, a hyper-political
                     media environment, a global pandemic—the road for corporate
@@ -702,9 +910,14 @@
       <!-- /Resources and Insights section -->
 
       <!-- FAQs section -->
-      <section class="section faq-section bg-brand-primary">
-        <div class="container faq-section__container">
-          <div>
+      <section class="section faq-section bg-brand-primary relative">
+        <img
+          src="assets/decor/decor-rectangle.svg"
+          alt="Decor"
+          class="bg-decor bg-decor--bottom"
+        />
+        <div class="container faq-section__container z-10 relative">
+          <div class="faq-section__left">
             <h2 class="heading-2">Frequently Asked Questions</h2>
             <div class="faq-section__info">
               <i class="ph-thin ph-question icon-48"></i>
@@ -721,176 +934,189 @@
             </div>
           </div>
 
-          <!-- Accordion -->
-          <div class="accordion" role="region">
-            <!-- Accordion Item -->
-            <article class="accordion__item">
-              <input
-                id="faq-1"
-                class="accordion__toggler"
-                type="radio"
-                name="faq"
-                checked
-              />
-              <label class="accordion__label" for="faq-1">
-                Does WIECK provide analytics?
-                <span class="accordion__chev">
-                  <i class="ph-thin ph-caret-down icon-16"></i>
-                </span>
-              </label>
-              <div class="accordion__panel">
-                <div>
-                  <p>
-                    Absolutely. All solutions include robust tracking and
-                    reporting to measure reach, engagement, and ROI, helping
-                    communications teams justify budgets and optimize
-                    strategies.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit iste porro est voluptatem perspiciatis molestias,
-                    placeat sapiente quidem recusandae beatae!
-                  </p>
+          <div class="faq-section__right">
+            <!-- Accordion -->
+            <div class="accordion" role="region">
+              <!-- Accordion Item -->
+              <article class="accordion__item">
+                <input
+                  id="faq-1"
+                  class="accordion__toggler"
+                  type="radio"
+                  name="faq"
+                  checked
+                />
+                <label class="accordion__label" for="faq-1">
+                  Does WIECK provide analytics?
+                  <span class="accordion__chev">
+                    <i class="ph-thin ph-caret-down icon-16"></i>
+                  </span>
+                </label>
+                <div class="accordion__panel">
+                  <div>
+                    <p>
+                      Absolutely. All solutions include robust tracking and
+                      reporting to measure reach, engagement, and ROI, helping
+                      communications teams justify budgets and optimize
+                      strategies.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- /Accordion Item -->
-            <!-- Accordion Item -->
-            <article class="accordion__item">
-              <input
-                id="faq-2"
-                class="accordion__toggler"
-                type="radio"
-                name="faq"
-              />
-              <label class="accordion__label" for="faq-2">
-                How is WIECK different from other content management platforms?
-                <span class="accordion__chev">
-                  <i class="ph-thin ph-caret-down icon-16"></i>
-                </span>
-              </label>
-              <div class="accordion__panel">
-                <div>
-                  <p>
-                    Absolutely. All solutions include robust tracking and
-                    reporting to measure reach, engagement, and ROI, helping
-                    communications teams justify budgets and optimize
-                    strategies.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit iste porro est voluptatem perspiciatis molestias,
-                    placeat sapiente quidem recusandae beatae!
-                  </p>
+              </article>
+              <!-- /Accordion Item -->
+              <!-- Accordion Item -->
+              <article class="accordion__item">
+                <input
+                  id="faq-2"
+                  class="accordion__toggler"
+                  type="radio"
+                  name="faq"
+                />
+                <label class="accordion__label" for="faq-2">
+                  How is WIECK different from other content management
+                  platforms?
+                  <span class="accordion__chev">
+                    <i class="ph-thin ph-caret-down icon-16"></i>
+                  </span>
+                </label>
+                <div class="accordion__panel">
+                  <div>
+                    <p>
+                      Absolutely. All solutions include robust tracking and
+                      reporting to measure reach, engagement, and ROI, helping
+                      communications teams justify budgets and optimize
+                      strategies.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- /Accordion Item -->
-            <!-- Accordion Item -->
-            <article class="accordion__item">
-              <input
-                id="faq-3"
-                class="accordion__toggler"
-                type="radio"
-                name="faq"
-              />
-              <label class="accordion__label" for="faq-3">
-                What products does WIECK offer?
-                <span class="accordion__chev">
-                  <i class="ph-thin ph-caret-down icon-16"></i>
-                </span>
-              </label>
-              <div class="accordion__panel">
-                <div>
-                  <p>
-                    Absolutely. All solutions include robust tracking and
-                    reporting to measure reach, engagement, and ROI, helping
-                    communications teams justify budgets and optimize
-                    strategies.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit iste porro est voluptatem perspiciatis molestias,
-                    placeat sapiente quidem recusandae beatae!
-                  </p>
+              </article>
+              <!-- /Accordion Item -->
+              <!-- Accordion Item -->
+              <article class="accordion__item">
+                <input
+                  id="faq-3"
+                  class="accordion__toggler"
+                  type="radio"
+                  name="faq"
+                />
+                <label class="accordion__label" for="faq-3">
+                  What products does WIECK offer?
+                  <span class="accordion__chev">
+                    <i class="ph-thin ph-caret-down icon-16"></i>
+                  </span>
+                </label>
+                <div class="accordion__panel">
+                  <div>
+                    <p>
+                      Absolutely. All solutions include robust tracking and
+                      reporting to measure reach, engagement, and ROI, helping
+                      communications teams justify budgets and optimize
+                      strategies.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- /Accordion Item -->
-            <!-- Accordion Item -->
-            <article class="accordion__item">
-              <input
-                id="faq-4"
-                class="accordion__toggler"
-                type="radio"
-                name="faq"
-              />
-              <label class="accordion__label" for="faq-4">
-                Can WIECK customize solutions for my company’s needs?
-                <span class="accordion__chev">
-                  <i class="ph-thin ph-caret-down icon-16"></i>
-                </span>
-              </label>
-              <div class="accordion__panel">
-                <div>
-                  <p>
-                    Absolutely. All solutions include robust tracking and
-                    reporting to measure reach, engagement, and ROI, helping
-                    communications teams justify budgets and optimize
-                    strategies.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit iste porro est voluptatem perspiciatis molestias,
-                    placeat sapiente quidem recusandae beatae!
-                  </p>
+              </article>
+              <!-- /Accordion Item -->
+              <!-- Accordion Item -->
+              <article class="accordion__item">
+                <input
+                  id="faq-4"
+                  class="accordion__toggler"
+                  type="radio"
+                  name="faq"
+                />
+                <label class="accordion__label" for="faq-4">
+                  Can WIECK customize solutions for my company’s needs?
+                  <span class="accordion__chev">
+                    <i class="ph-thin ph-caret-down icon-16"></i>
+                  </span>
+                </label>
+                <div class="accordion__panel">
+                  <div>
+                    <p>
+                      Absolutely. All solutions include robust tracking and
+                      reporting to measure reach, engagement, and ROI, helping
+                      communications teams justify budgets and optimize
+                      strategies.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- /Accordion Item -->
-            <!-- Accordion Item -->
-            <article class="accordion__item">
-              <input
-                id="faq-5"
-                class="accordion__toggler"
-                type="radio"
-                name="faq"
-              />
-              <label class="accordion__label" for="faq-5">
-                How does WIECK support crisis communication?
-                <span class="accordion__chev">
-                  <i class="ph-thin ph-caret-down icon-16"></i>
-                </span>
-              </label>
-              <div class="accordion__panel">
-                <div>
-                  <p>
-                    Absolutely. All solutions include robust tracking and
-                    reporting to measure reach, engagement, and ROI, helping
-                    communications teams justify budgets and optimize
-                    strategies.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Suscipit iste porro est voluptatem perspiciatis molestias,
-                    placeat sapiente quidem recusandae beatae!
-                  </p>
+              </article>
+              <!-- /Accordion Item -->
+              <!-- Accordion Item -->
+              <article class="accordion__item">
+                <input
+                  id="faq-5"
+                  class="accordion__toggler"
+                  type="radio"
+                  name="faq"
+                />
+                <label class="accordion__label" for="faq-5">
+                  How does WIECK support crisis communication?
+                  <span class="accordion__chev">
+                    <i class="ph-thin ph-caret-down icon-16"></i>
+                  </span>
+                </label>
+                <div class="accordion__panel">
+                  <div>
+                    <p>
+                      Absolutely. All solutions include robust tracking and
+                      reporting to measure reach, engagement, and ROI, helping
+                      communications teams justify budgets and optimize
+                      strategies.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Suscipit iste porro est voluptatem perspiciatis molestias,
+                      placeat sapiente quidem recusandae beatae!
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <!-- /Accordion Item -->
+              </article>
+              <!-- /Accordion Item -->
+            </div>
+            <!-- /Accordion -->
           </div>
-          <!-- /Accordion -->
         </div>
       </section>
       <!-- /FAQs section -->
 
       <!-- Contact section -->
-      <section class="section bg-tertiary relative">
+      <section class="section bg-tertiary relative" id="contact-us">
         <img
           src="assets/decor/decor-rectangle-reverse.svg"
           alt="Decor"
-          class="bg-decor bg-decor__right"
+          class="bg-decor"
         />
         <div class="container z-10 relative">
           <h2 class="heading-2 text-white">
@@ -901,30 +1127,39 @@
             and strengthen media relationships
           </p>
 
-          <!-- Contact form -->
-          <form class="contact-form">
-            <input type="text" name="name" placeholder="Full Name" />
-            <input type="email" name="email" placeholder="Work Email" />
-            <input type="text" name="company" placeholder="Company" />
-            <input type="text" name="role" placeholder="Your Role" />
-            <textarea name="message" placeholder="How can we help?"></textarea>
-            <button
-              type="submit"
-              class="button button--brand button--fluid button--large"
-            >
-              Submit
-            </button>
-          </form>
-          <!-- /Contact form -->
+          <div class="contact-section__content">
+            <!-- Contact form -->
+            <form class="contact-form">
+              <div class="contact-form__left">
+                <input type="text" name="name" placeholder="Full Name" />
+                <input type="email" name="email" placeholder="Work Email" />
+                <input type="text" name="company" placeholder="Company" />
+                <input type="text" name="role" placeholder="Your Role" />
+              </div>
+              <div class="contact-form__right">
+                <textarea
+                  name="message"
+                  placeholder="How can we help?"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="button button--brand button--fluid button--large"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <!-- /Contact form -->
 
-          <!-- Contact info -->
-          <div class="contact-info">
-            <div>
-              <i class="ph-thin ph-phone-outgoing icon-48"></i>
-            </div>
-            <div>
-              <p>Or call us directly</p>
-              <h3>(972) 392-0888</h3>
+            <!-- Contact info -->
+            <div class="contact-info">
+              <div>
+                <i class="ph-thin ph-phone-outgoing icon-48"></i>
+              </div>
+              <div>
+                <p>Or call us directly</p>
+                <h3>(972) 392-0888</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -937,54 +1172,60 @@
     <footer class="footer">
       <!-- Footer container -->
       <div class="container footer__container">
-        <div class="footer__logo">
-          <img src="assets/wieck-logo-bw.svg" alt="Wieck B&W Logo" />
-        </div>
-        <p class="text-body text-secondary">
-          Our vision is to provide convenience and help increase your sales
-          business.
-        </p>
+        <div class="footer__left">
+          <div class="footer__logo">
+            <img src="assets/wieck-logo-bw.svg" alt="Wieck B&W Logo" />
+          </div>
+          <div class="footer__info">
+            <p class="text-body text-secondary">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
 
-        <!-- Socials -->
-        <nav class="socials">
-          <a href="#">
-            <i class="ph-thin ph-facebook-logo icon"></i>
-          </a>
-          <a href="#">
-            <i class="ph-thin ph-x-logo icon"></i>
-          </a>
-          <a href="#">
-            <i class="ph-thin ph-instagram-logo icon"></i>
-          </a>
-          <a href="#">
-            <i class="ph-thin ph-linkedin-logo icon"></i>
-          </a>
-        </nav>
-        <!-- /Socials -->
-
-        <!-- Footer nav -->
-        <div class="footer__nav">
-          <h4 class="heading-4">Wieck</h4>
-          <nav class="nav nav--vertical">
-            <a href="#" class="text-secondary">In Memory of James F. Wieck</a>
-            <a href="#" class="text-secondary">About Us</a>
-            <a href="#" class="text-secondary">Contact Us</a>
-            <a href="#" class="text-secondary">Privacy Policy</a>
-          </nav>
+            <!-- Socials -->
+            <nav class="socials">
+              <a href="#">
+                <i class="ph-thin ph-facebook-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph-thin ph-x-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph-thin ph-instagram-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph-thin ph-linkedin-logo icon"></i>
+              </a>
+            </nav>
+          </div>
+          <!-- /Socials -->
         </div>
-        <!-- /Footer nav -->
 
-        <!-- Footer nav -->
-        <div class="footer__nav">
-          <h4 class="heading-4">Services</h4>
-          <nav class="nav nav--vertical">
-            <a href="#" class="text-secondary">Enterprise Newsrooms</a>
-            <a href="#" class="text-secondary">Digital Asset Management</a>
-            <a href="#" class="text-secondary">WIECK Desk</a>
-            <a href="#" class="text-secondary">Custom Development</a>
-          </nav>
+        <div class="footer__right">
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Wieck</h4>
+            <nav class="nav nav--vertical">
+              <a href="#" class="text-secondary">In Memory of James F. Wieck</a>
+              <a href="#" class="text-secondary">About Us</a>
+              <a href="#contact-us" class="text-secondary">Contact Us</a>
+              <a href="#" class="text-secondary">Privacy Policy</a>
+            </nav>
+          </div>
+          <!-- /Footer nav -->
+
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Services</h4>
+            <nav class="nav nav--vertical">
+              <a href="#" class="text-secondary">Enterprise Newsrooms</a>
+              <a href="#" class="text-secondary">Digital Asset Management</a>
+              <a href="#" class="text-secondary">WIECK Desk</a>
+              <a href="#" class="text-secondary">Custom Development</a>
+            </nav>
+          </div>
+          <!-- /Footer nav -->
         </div>
-        <!-- /Footer nav -->
       </div>
       <!-- /Footer container -->
       <!-- Copyright -->

@@ -15,6 +15,7 @@
 .success-story-card__image img {
   aspect-ratio: 2/3;
   transform: rotate(-3deg);
+  margin: auto;
 }
 
 .success-story-card__author {
@@ -30,10 +31,67 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+.success-story-card__heading {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .success-story-card__content__stats {
   padding: 16px;
 }
 
 .success-story-card__content__stats h4 {
   margin-bottom: 4px;
+}
+
+.success-story-card__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.success-story-card__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  .success-story-card {
+    padding: 40px;
+  }
+
+  .success-story-card__heading {
+    font-size: 32pxpx;
+    line-height: 40px;
+  }
+
+  .success-story-card__content__stats {
+    margin-top: -16px;
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .success-story-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+  }
+
+  .success-story-card__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .success-story-card__content__stats {
+    margin-top: auto;
+  }
+
+  .success-story-card__right {
+    margin-top: auto;
+  }
 }

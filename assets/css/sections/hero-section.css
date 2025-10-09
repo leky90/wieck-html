@@ -17,6 +17,12 @@
   object-fit: contain;
 }
 
+.bg-decor--left {
+  left: 0;
+  right: auto;
+  transform: rotate(180deg);
+}
+
 .bg-decor--bottom {
   object-position: bottom center;
 }

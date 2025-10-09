@@ -1,1 +1,38 @@
-/* Form */
+/* Input */
+
+.input[type="text"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="number"],
+.input[type="date"],
+.input[type="time"],
+.input[type="datetime-local"],
+.input[type="url"],
+.input[type="search"],
+.input[type="password"],
+.input[type="file"],
+textarea.input {
+  border: var(--control-border-width) var(--control-border-style)
+    var(--border-primary);
+  border-radius: var(--control-border-radius);
+  padding: var(--control-padding);
+  font-size: var(--control-font-size);
+  line-height: var(--control-line-height);
+  font-weight: 400;
+  font-family: var(--font-family-primary);
+  color: var(--text-primary);
+  background-color: var(--bg-white);
+  outline: none;
+  transition: all 0.2s ease;
+  height: var(--control-height);
+}
+
+.input:disabled {
+  background-color: var(--bg-disabled);
+  color: var(--text-disabled);
+  border: var(--control-border-width) var(--control-border-style)
+    var(--border-primary-disabled);
+  cursor: not-allowed;
+}
+
+/* /Input */

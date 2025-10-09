@@ -1131,15 +1131,36 @@
             <!-- Contact form -->
             <form class="contact-form">
               <div class="contact-form__left">
-                <input type="text" name="name" placeholder="Full Name" />
-                <input type="email" name="email" placeholder="Work Email" />
-                <input type="text" name="company" placeholder="Company" />
-                <input type="text" name="role" placeholder="Your Role" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Work Email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company"
+                  required
+                />
+                <input
+                  type="text"
+                  name="role"
+                  placeholder="Your Role"
+                  required
+                />
               </div>
               <div class="contact-form__right">
                 <textarea
                   name="message"
                   placeholder="How can we help?"
+                  required
                 ></textarea>
                 <button
                   type="submit"

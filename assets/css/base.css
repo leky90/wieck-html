@@ -121,7 +121,6 @@ textarea {
   outline: none;
   transition: all 0.2s ease;
   height: var(--control-height);
-  cursor: pointer;
 }
 
 *::placeholder {
@@ -154,4 +153,16 @@ textarea {
 input:focus,
 textarea:focus {
   outline: 2px solid var(--border-focused);
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: var(--bg-quaternary);
+  color: var(--text-disabled);
+}
+
+input:user-invalid,
+textarea:user-invalid {
+  border: var(--control-border-width) var(--control-border-style)
+    var(--border-error);
 }

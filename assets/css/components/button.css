@@ -1,16 +1,79 @@
 /* Button */
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 8px 20px;
+  border: var(--control-border-width) var(--control-border-style) transparent;
+  border-radius: var(--control-border-radius);
+  padding: var(--control-padding);
+  font-size: var(--control-font-size);
+  line-height: var(--control-line-height);
   font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-  background: var(--bg-neutral);
-  color: var(--text-primary-reverse);
+  font-family: var(--control-font-family);
+  color: var(--control-color);
+  background-color: var(--control-background-color);
+  outline: none;
+  transition: all 0.2s ease;
+  height: var(--control-height);
   cursor: pointer;
+}
+
+.button:focus {
+  outline: 3px solid var(--border-focused);
+}
+
+.button:hover {
+  background: var(--bg-neutral-hovered);
+}
+
+.button:active {
+  background: var(--bg-neutral-pressed);
+}
+
+.button:disabled {
+  background: var(--bg-neutral-disabled);
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}
+
+.button--brand {
+  background: var(--bg-brand);
+  color: var(--text-primary-reverse);
+}
+
+.button--brand:hover {
+  background: var(--bg-brand-hovered);
+}
+
+.button--brand:active {
+  background: var(--bg-brand-pressed);
+}
+
+.button--brand:disabled {
+  background: var(--bg-brand-disabled);
+  cursor: not-allowed;
+}
+
+.button--outline {
+  background: var(--bg-white);
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+}
+
+.button--outline:hover {
+  color: var(--text-brand);
+  background: var(--bg-white);
+  border: 1px solid var(--border-primary-hovered);
+}
+
+.button--outline:active {
+  background: var(--color-gray-50);
+  color: var(--text-brand-focused);
+  border: 1px solid var(--border-primary-pressed);
+}
+
+.button--outline:disabled {
+  background: var(--bg-white);
+  border: 1px solid var(--border-primary);
+  color: var(--text-disabled);
+  cursor: not-allowed;
 }
 
 .button--large {
@@ -23,28 +86,14 @@
   width: 100%;
 }
 
-.button--brand {
-  background: var(--bg-brand);
-  color: var(--text-primary-reverse);
-}
-
-.button--secondary {
-  background: var(--bg-white);
-  color: var(--text-primary);
-  outline: 1px solid var(--border-primary);
+.button--icon-small {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
 }
 
 .button--icon {
   width: 48px;
   height: 48px;
   padding: 12px;
-}
-
-@media (min-width: 760px) {
-  /* tablet */
-  .button {
-    padding: 12px 24px;
-    font-size: 16px;
-    line-height: 24px;
-  }
 }

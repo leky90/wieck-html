@@ -4,15 +4,25 @@
   --control-border-width: 1px;
   --control-border-color: var(--border-secondary);
   --control-border-style: solid;
-  --control-padding: 12px 16px;
-  --control-height: 48px;
-  --control-font-size: 16px;
-  --control-line-height: 24px;
+  --control-padding: 8px 20px;
+  --control-height: 38px;
+  --control-font-size: 14px;
+  --control-line-height: 22px;
   --control-font-weight: 400;
   --control-font-family: var(--font-family-primary);
   --control-background-color: var(--bg-quaternary);
-  --control-color: var(--text-white);
   --control-placeholder-color: var(--text-placeholder);
+  --control-color: var(--text-white);
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  :root {
+    --control-padding: 12px 24px;
+    --control-font-size: 16px;
+    --control-line-height: 24px;
+    --control-height: 48px;
+  }
 }
 
 /* /Form Theme */

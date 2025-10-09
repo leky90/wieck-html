@@ -7,6 +7,10 @@
   --color-brand-primary: #d6f0f7;
   --color-brand-secondary: #eff9fc;
   --color-brand-tertiary: #258db5;
+  --color-brand-400: #4cafd2;
+  --color-brand-600: #7dcae3;
+  --color-brand-700: #056187;
+  --color-brand-800: #004b6e;
 
   --color-error-light: #d92d20;
   --color-error-dark: #f97066;
@@ -18,9 +22,10 @@
   --color-warning-dark: #fdb022;
 
   --color-gray-25: #fafbfb;
-  --color-gray-50: #f6f7fa;
+  --color-gray-50: #f6f7f7;
   --color-gray-100: #f1f3f3;
   --color-gray-200: #d8dadc;
+  --color-gray-300: #bfc1c5;
   --color-gray-400: #a6a8ae;
   --color-gray-500: #8c9097;
   --color-gray-600: #6b6f77;
@@ -32,6 +37,7 @@
   /* Text Colors */
   --text-white: var(--color-white);
   --text-brand: var(--color-brand);
+  --text-brand-focused: var(--color-brand-800);
   --text-primary: var(--color-gray-950);
   --text-primary-reverse: var(--color-gray-25);
   --text-secondary: var(--color-gray-800);
@@ -41,11 +47,19 @@
   --text-placeholder: var(--color-gray-400);
 
   /* Background Colors */
+  --bg-white: var(--color-white);
   --bg-brand: var(--color-brand);
   --bg-brand-primary: var(--color-brand-primary);
   --bg-brand-secondary: var(--color-brand-secondary);
-  --bg-white: var(--color-white);
+  --bg-brand-hovered: var(--color-brand-800);
+  --bg-brand-pressed: var(--color-brand-700);
+  --bg-brand-disabled: var(--color-brand-400);
+
   --bg-neutral: var(--color-gray-800);
+  --bg-neutral-hovered: var(--color-gray-950);
+  --bg-neutral-pressed: var(--color-gray-900);
+  --bg-neutral-disabled: var(--color-gray-500);
+
   --bg-primary: var(--color-gray-100);
   --bg-secondary: var(--color-gray-50);
   --bg-tertiary: var(--color-gray-950);
@@ -55,6 +69,9 @@
   --border-brand: var(--color-brand);
   --border-brand-tertiary: var(--color-brand-tertiary);
   --border-primary: var(--color-gray-200);
+  --border-primary-hovered: var(--color-gray-400);
+  --border-primary-pressed: var(--color-gray-300);
   --border-secondary: var(--color-gray-700);
   --border-error: var(--color-error-dark);
+  --border-focused: var(--color-brand-600);
 }

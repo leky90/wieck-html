@@ -311,8 +311,16 @@
 }
 
 .heading-4 {
-  font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
+  font-size: var(--heading-4-font-size);
+  line-height: var(--heading-4-line-height);
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.heading-5 {
+  font-size: var(--heading-5-font-size);
+  line-height: var(--heading-5-line-height);
   margin: 0;
   margin-bottom: 4px;
   font-weight: 600;
@@ -327,8 +335,8 @@
 }
 
 .text-body {
-  font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
   margin: 0;
 }
 
@@ -346,16 +354,36 @@
   color: var(--text-brand);
 }
 
+.text-white {
+  color: var(--color-white);
+}
+
 .text-primary {
   color: var(--text-primary);
+}
+
+.text-primary-reverse {
+  color: var(--text-primary-reverse);
 }
 
 .text-secondary {
   color: var(--text-secondary);
 }
 
+.text-secondary-reverse {
+  color: var(--text-secondary-reverse);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
 .text-link {
   color: var(--text-primary);
+}
+
+.text-disabled {
+  color: var(--text-disabled);
 }
 
 .bg-brand-primary {

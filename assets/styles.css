@@ -9,6 +9,12 @@
 @import url("./css/utilities.css");
 
 /* Section imports */
+@import url("./css/sections/header.css");
+@import url("./css/sections/footer.css");
 @import url("./css/sections/hero-section.css");
 @import url("./css/sections/service-section.css");
 @import url("./css/sections/success-stories-section.css");
+@import url("./css/sections/partners-section.css");
+@import url("./css/sections/blog-section.css");
+@import url("./css/sections/faq-section.css");
+@import url("./css/sections/contact-section.css");

@@ -15,6 +15,12 @@
   --heading-3-font-size: 20px;
   --heading-3-line-height: 28px;
 
+  --heading-4-font-size: 16px;
+  --heading-4-line-height: 24px;
+
+  --heading-5-font-size: 14px;
+  --heading-5-line-height: 22px;
+
   --subheading-font-size: 16px;
   --subheading-line-height: 24px;
 
@@ -33,6 +39,12 @@
 
     --heading-3-font-size: 32px;
     --heading-3-line-height: 40px;
+
+    --heading-4-font-size: 18px;
+    --heading-4-line-height: 26px;
+
+    --heading-5-font-size: 16px;
+    --heading-5-line-height: 24px;
 
     --subheading-font-size: 18px;
     --subheading-line-height: 26px;

@@ -29,3 +29,11 @@
   border-radius: 9999px;
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
+
+.success-story-card__content__stats {
+  padding: 16px;
+}
+
+.success-story-card__content__stats h4 {
+  margin-bottom: 4px;
+}

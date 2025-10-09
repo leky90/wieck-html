@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,7 +23,7 @@
       <div class="container flex justify-between align-center">
         <!-- Logo -->
         <div class="header__logo">
-          <img src="assets/logo.svg" alt="Wieck Logo" />
+          <img src="assets/wieck-logo.svg" alt="Wieck Logo" />
         </div>
         <!-- /Logo -->
 
@@ -145,7 +145,9 @@
               </li>
             </ul>
             <div class="mobile-nav__footer">
-              <a href="#" class="button button--fluid button--brand"
+              <a
+                href="#"
+                class="button button--fluid button--large button--brand"
                 >Contact Us</a
               >
             </div>
@@ -159,7 +161,7 @@
     <!-- Main -->
     <main>
       <!-- Hero section -->
-      <section class="hero-section bg-brand-primary">
+      <section class="hero-section relative bg-brand-primary">
         <img
           src="assets/decor/decor-rectangle.svg"
           alt="Decor"
@@ -181,7 +183,7 @@
             <!-- Stat Card -->
             <div class="card card--white card-stat">
               <p class="text-stat">32M</p>
-              <p class="text-body font-bold">Page Views</p>
+              <h5 class="heading-5">Page Views</h5>
               <p class="text-body">Last 12 months</p>
               <img
                 src="assets/icons/eye.svg"
@@ -193,7 +195,7 @@
             <!-- Stat Card -->
             <div class="card card--white card-stat">
               <p class="text-stat">14.5M</p>
-              <p class="text-body font-bold">New Users</p>
+              <h5 class="heading-5">New Users</h5>
               <p class="text-body">Last 12 months</p>
               <img
                 src="assets/icons/user-circle.svg"
@@ -205,7 +207,7 @@
             <!-- Stat Card -->
             <div class="card card--white card-stat">
               <p class="text-stat">20M</p>
-              <p class="text-body font-bold">Sessions</p>
+              <h5 class="heading-5">Sessions</h5>
               <p class="text-body">Last 12 months</p>
               <img
                 src="assets/icons/film.svg"
@@ -340,7 +342,9 @@
                   publication time from hours to minutes while maintaining
                   editorial quality.
                 </p>
-                <div class="card card--brand px-md py-md">
+                <div
+                  class="card card--brand success-story-card__content__stats"
+                >
                   <div class="grid grid-2 gap-lg">
                     <div>
                       <h4 class="heading-3 text-brand">300%</h4>
@@ -373,7 +377,7 @@
                   <img src="assets/images/author-1.png" alt="Author 1" />
                 </div>
                 <div>
-                  <h6 class="heading-4 text-primary">Sarah Johnson</h6>
+                  <h5 class="heading-5 text-primary">Sarah Johnson</h5>
                   <p class="text-body text-secondary">Editor-in-Chief</p>
                 </div>
               </div>
@@ -384,11 +388,143 @@
         </div>
       </section>
       <!-- /Success Stories section -->
+
+      <!-- Trusted by section -->
+      <section class="section bg-primary">
+        <div class="container">
+          <h2 class="heading-2">Trusted by 500+ Enterprise Newsrooms</h2>
+        </div>
+      </section>
+      <!-- /Trust section -->
+
+      <!-- Resources and Insights section -->
+      <section class="section">
+        <div class="container">
+          <h2 class="heading-2">Resources and Insights</h2>
+        </div>
+      </section>
+      <!-- /Resources and Insights section -->
+
+      <!-- FAQs section -->
+      <section class="section bg-brand-primary">
+        <div class="container">
+          <h2 class="heading-2">Frequently Asked Questions</h2>
+        </div>
+      </section>
+      <!-- /FAQs section -->
+
+      <!-- Contact section -->
+      <section class="section bg-tertiary relative">
+        <img
+          src="assets/decor/decor-rectangle-reverse.svg"
+          alt="Decor"
+          class="bg-decor bg-decor__right"
+        />
+        <div class="container z-10 relative">
+          <h2 class="heading-2 text-white">
+            Ready to Transform Your Communications?
+          </h2>
+          <p class="subheading text-secondary-reverse">
+            Join hundreds of organizations using WIECK to amplify their stories
+            and strengthen media relationships
+          </p>
+
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Full Name" />
+            <input type="email" name="email" placeholder="Work Email" />
+            <input type="text" name="company" placeholder="Company" />
+            <input type="text" name="role" placeholder="Your Role" />
+            <textarea name="message" placeholder="How can we help?"></textarea>
+            <button
+              type="submit"
+              class="button button--brand button--fluid button--large"
+            >
+              Submit
+            </button>
+          </form>
+
+          <div class="contact-info">
+            <div>
+              <i class="ph-thin ph-phone-outgoing icon-48"></i>
+            </div>
+            <div>
+              <p>Or call us directly</p>
+              <h3>(972) 392-0888</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact section -->
     </main>
     <!-- /Main -->
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer">
+      <!-- Footer container -->
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <img src="assets/wieck-logo-bw.svg" alt="Wieck B&W Logo" />
+        </div>
+        <p class="text-body text-secondary">
+          Our vision is to provide convenience and help increase your sales
+          business.
+        </p>
+
+        <!-- Socials -->
+        <nav class="socials">
+          <a href="#">
+            <i class="ph-thin ph-facebook-logo icon"></i>
+          </a>
+          <a href="#">
+            <i class="ph-thin ph-x-logo icon"></i>
+          </a>
+          <a href="#">
+            <i class="ph-thin ph-instagram-logo icon"></i>
+          </a>
+          <a href="#">
+            <i class="ph-thin ph-linkedin-logo icon"></i>
+          </a>
+        </nav>
+        <!-- /Socials -->
+
+        <!-- Footer nav -->
+        <div class="footer__nav">
+          <h4 class="heading-4">Wieck</h4>
+          <nav class="nav nav--vertical">
+            <a href="#" class="text-secondary">In Memory of James F. Wieck</a>
+            <a href="#" class="text-secondary">About Us</a>
+            <a href="#" class="text-secondary">Contact Us</a>
+            <a href="#" class="text-secondary">Privacy Policy</a>
+          </nav>
+        </div>
+        <!-- /Footer nav -->
+
+        <!-- Footer nav -->
+        <div class="footer__nav">
+          <h4 class="heading-4">Services</h4>
+          <nav class="nav nav--vertical">
+            <a href="#" class="text-secondary">Enterprise Newsrooms</a>
+            <a href="#" class="text-secondary">Digital Asset Management</a>
+            <a href="#" class="text-secondary">WIECK Desk</a>
+            <a href="#" class="text-secondary">Custom Development</a>
+          </nav>
+        </div>
+        <!-- /Footer nav -->
+      </div>
+      <!-- /Footer container -->
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <p class="text-body text-secondary">
+          © Copyright 2025 | All Rights Reserved
+        </p>
+        <nav class="nav">
+          <a href="#" class="text-secondary">Privacy Policy</a>
+          <a href="#" class="text-secondary">Terms of Service</a>
+        </nav>
+      </div>
+      <!-- /Copyright -->
+    </footer>
+
     <!-- /Footer -->
   </body>
 </html>

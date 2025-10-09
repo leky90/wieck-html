@@ -74,3 +74,53 @@ blockquote {
   padding-left: 24px;
   margin: 24px 0;
 }
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+textarea {
+  border: var(--control-border-width) var(--control-border-style)
+    var(--control-border-color);
+  border-radius: var(--control-border-radius);
+  padding: var(--control-padding);
+  font-size: var(--control-font-size);
+  line-height: var(--control-line-height);
+  font-weight: var(--control-font-weight);
+  font-family: var(--control-font-family);
+  color: var(--control-color);
+  background-color: var(--control-background-color);
+  placeholder-color: var(--control-placeholder-color);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+textarea {
+  width: 100%;
+  display: block;
+}

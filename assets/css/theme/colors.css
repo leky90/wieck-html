@@ -33,6 +33,7 @@
   --text-primary: var(--color-gray-950);
   --text-primary-reverse: var(--color-gray-25);
   --text-secondary: var(--color-gray-800);
+  --text-secondary-reverse: var(--color-gray-200);
   --text-tertiary: var(--color-gray-200);
   --text-disabled: var(--color-gray-500);
   --text-placeholder: var(--color-gray-600);

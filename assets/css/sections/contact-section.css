@@ -64,6 +64,10 @@
   .contact-form {
     grid-column: span 2;
   }
+
+  .contact-info {
+    margin-top: auto;
+  }
 }
 
 /* /Contact Section */

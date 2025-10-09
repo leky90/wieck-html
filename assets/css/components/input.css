@@ -35,4 +35,27 @@ textarea.input {
   cursor: not-allowed;
 }
 
+.input--large[type="text"],
+.input--large[type="email"],
+.input--large[type="tel"],
+.input--large[type="number"],
+.input--large[type="date"],
+.input--large[type="time"],
+.input--large[type="datetime-local"],
+.input--large[type="url"],
+.input--large[type="search"],
+.input--large[type="password"],
+.input--large[type="file"] {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 16px;
+  height: 48px;
+}
+
+textarea.input--large {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 16px;
+}
+
 /* /Input */

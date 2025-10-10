@@ -12,6 +12,25 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.resource-card .decor {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+}
+
+.resource-card:hover {
+  background-color: var(--bg-brand-secondary);
+  box-shadow: var(--shadow-lg);
+}
+
+.resource-card:hover .decor {
+  display: block;
 }
 
 .resource-card__image {

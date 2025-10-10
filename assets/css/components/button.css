@@ -25,6 +25,7 @@
 
 .button:hover {
   background: var(--bg-neutral-hovered);
+  color: var(--text-white);
 }
 
 .button:active {

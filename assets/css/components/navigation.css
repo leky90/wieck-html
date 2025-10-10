@@ -30,7 +30,7 @@
   justify-content: center;
   gap: 6px;
   padding: 4px 6px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .nav__item:hover {
@@ -42,7 +42,7 @@
 }
 
 .nav__item__icon {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav__item--has-submenu {
@@ -83,7 +83,7 @@
 .nav__submenu__link {
   display: block;
   padding: 12px 16px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
   border-bottom: 1px solid transparent;
 }
 
@@ -188,7 +188,7 @@
   padding: 12px 16px;
   font-size: 16px;
   line-height: 24px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .mobile-nav__submenu__icon {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .mobile-nav__submenu__item {

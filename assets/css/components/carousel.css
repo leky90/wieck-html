@@ -41,7 +41,10 @@
 }
 
 .carousel__dots {
-  margin: 16px auto 0;
+  position: absolute;
+  bottom: -48px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;

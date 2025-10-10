@@ -243,7 +243,9 @@
 
 @media (min-width: 1232px) {
   .main-nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
 
   .mobile-nav {

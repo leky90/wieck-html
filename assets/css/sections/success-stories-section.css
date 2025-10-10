@@ -10,12 +10,20 @@
 
 .success-story-card__image {
   padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.success-story-card__image img {
+.success-story-card__image__wrapper {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(var(--shadow));
+}
+
+.success-story-card__image__wrapper img {
   aspect-ratio: 2/3;
   transform: rotate(-3deg);
-  margin: auto;
 }
 
 .success-story-card__author {

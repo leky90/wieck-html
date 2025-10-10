@@ -21,6 +21,7 @@
     <script src="assets/scripts/carousel.js" defer></script>
     <script src="assets/scripts/navigation.js" defer></script>
     <script src="assets/scripts/hero-stats.js" defer></script>
+    <script src="assets/scripts/resource-toggle.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -81,6 +82,9 @@
               <a href="#" class="nav__link">Privacy Policy</a>
             </li>
           </ul>
+          <a href="#contact-us" class="button button--brand header__cta"
+            >Contact Us</a
+          >
         </nav>
         <!-- /Main nav -->
 
@@ -212,7 +216,7 @@
             <div
               class="card card--white card-stat"
               style="
-                --image: url(https://leky90.github.io/wieck-html/assets/images/stat-1.jpg);
+                --image: url(https://leky90.github.io/wieck-html/assets/images/stat-2.jpg);
               "
             >
               <p class="text-stat">14.5M</p>
@@ -229,7 +233,7 @@
             <div
               class="card card--white card-stat"
               style="
-                --image: url(https://leky90.github.io/wieck-html/assets/images/stat-1.jpg);
+                --image: url(https://leky90.github.io/wieck-html/assets/images/stat-3.jpg);
               "
             >
               <p class="text-stat">20M</p>
@@ -434,10 +438,12 @@
                   </div>
 
                   <div class="success-story-card__image">
-                    <img
-                      src="assets/images/success-story-1.png"
-                      alt="Success Story 1"
-                    />
+                    <div class="success-story-card__image__wrapper">
+                      <img
+                        src="assets/images/success-story-1.png"
+                        alt="Success Story 1"
+                      />
+                    </div>
                   </div>
 
                   <div class="success-story-card__right">
@@ -958,6 +964,7 @@
               <label
                 for="view-more-posts"
                 class="button button--outline button--large"
+                data-expanded-label="View Less Posts"
                 >View More Posts</label
               >
             </div>

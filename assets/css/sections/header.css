@@ -14,4 +14,12 @@
   height: 48px;
 }
 
+.header__cta {
+  display: none;
+}
+
+.header--scrolled .header__cta {
+  display: inline-flex;
+}
+
 /* /Header */

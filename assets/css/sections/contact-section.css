@@ -2,10 +2,10 @@
 .contact-form {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 8px;
+  gap: 24px;
 }
 
-.contact-form textarea {
+.contact-form .input__wrapper:has(textarea) {
   flex: 1 1 176px;
 }
 
@@ -32,13 +32,13 @@
 .contact-form__left {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
 }
 
 .contact-form__right {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 @media (min-width: 760px) {
@@ -49,7 +49,11 @@
   }
 
   .contact-form__left {
-    gap: 16px;
+    gap: 24px;
+  }
+
+  .contact-form__right {
+    gap: 24px;
   }
 }
 

@@ -1197,42 +1197,79 @@
             <!-- Contact form -->
             <form class="contact-form">
               <div class="contact-form__left">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  class="input--large"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Work Email"
-                  class="input--large"
-                  required
-                />
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company"
-                  class="input--large"
-                  required
-                />
-                <input
-                  type="text"
-                  name="role"
-                  placeholder="Your Role"
-                  class="input--large"
-                  required
-                />
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Work Email"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="role"
+                    placeholder="Your Role"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
               </div>
               <div class="contact-form__right">
-                <textarea
-                  name="message"
-                  placeholder="How can we help?"
-                  class="input--large"
-                  required
-                ></textarea>
+                <div class="input__wrapper">
+                  <textarea
+                    name="message"
+                    placeholder="How can we help?"
+                    class="input--large"
+                    required
+                  ></textarea>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
                 <button
                   type="submit"
                   class="button button--brand button--fluid button--large"

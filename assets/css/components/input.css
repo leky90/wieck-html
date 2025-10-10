@@ -58,4 +58,39 @@ textarea.input--large {
   padding: 12px 16px;
 }
 
+.input__wrapper {
+  position: relative;
+}
+
+.input__wrapper textarea {
+  height: 100%;
+}
+
+.input__wrapper__icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.input__wrapper__message {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  display: none;
+}
+
+.input__wrapper:has(input:user-invalid) .input__wrapper__icon,
+.input__wrapper:has(textarea:user-invalid) .input__wrapper__icon {
+  display: block;
+}
+
+.input__wrapper:has(input:user-invalid) .input__wrapper__message,
+.input__wrapper:has(textarea:user-invalid) .input__wrapper__message {
+  display: block;
+}
+
 /* /Input */

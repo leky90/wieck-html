@@ -29,14 +29,15 @@
         });
       });
 
-      const footerButton = document.querySelector(
-        '.mobile-nav__footer a[href="#contact-us"]'
+      const footerButtons = document.querySelectorAll(
+        '.mobile-nav__footer a[href="#contact-us"], .mobile-nav__content .button[href="#contact-us"]'
       );
-      if (footerButton) {
-        footerButton.addEventListener("click", () => {
+
+      footerButtons.forEach((button) => {
+        button.addEventListener("click", () => {
           closeNav();
         });
-      }
+      });
     }
   };
 

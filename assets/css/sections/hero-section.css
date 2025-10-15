@@ -5,6 +5,15 @@
   border-bottom: 3px solid var(--border-brand-tertiary);
 }
 
+.hero-heading-section {
+  padding: 44px 16px;
+  position: relative;
+}
+
+.hero-heading-section .heading {
+  max-width: 520px;
+}
+
 .bg-decor {
   position: absolute;
   top: 0;
@@ -91,6 +100,10 @@
     padding-top: 64px;
   }
 
+  .hero-heading-section {
+    padding-top: 56px;
+  }
+
   .hero-section .subheading {
     margin-bottom: 32px;
   }
@@ -127,6 +140,10 @@
 @media (min-width: 1232px) {
   /* desktop */
   .hero-section {
+    padding-top: 80px;
+  }
+
+  .hero-heading-section {
     padding-top: 80px;
   }
 

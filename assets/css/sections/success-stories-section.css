@@ -15,17 +15,6 @@
   align-items: center;
 }
 
-.success-story-card__image__wrapper {
-  display: inline-block;
-  position: relative;
-  filter: drop-shadow(var(--shadow));
-}
-
-.success-story-card__image__wrapper img {
-  aspect-ratio: 2/3;
-  transform: rotate(-3deg);
-}
-
 .success-story-card__author {
   display: flex;
   align-items: center;

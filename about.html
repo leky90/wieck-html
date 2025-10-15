@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WIECK &#8211; Corporate comms&#039; best-kept secret</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts/carousel.js" defer></script>
+    <script src="assets/scripts/navigation.js" defer></script>
+    <script src="assets/scripts/hero-stats.js" defer></script>
+    <script src="assets/scripts/resource-toggle.js" defer></script>
+    <script src="assets/scripts/modal.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="header__logo">
+          <img src="assets/wieck-logo.svg" alt="Wieck Logo" />
+        </div>
+        <!-- /Logo -->
+
+        <!-- Main nav -->
+        <nav class="nav main-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="in-memory-of-james-f-wieck.html" class="nav__link"
+                >In Memory of James F. Wieck</a
+              >
+            </li>
+            <!-- Main nav Submenu -->
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#services" class="nav__link">
+                <span>Services</span>
+                <i class="ph ph-caret-down nav__item__icon icon-16"></i>
+              </a>
+              <nav class="nav__submenu">
+                <ul class="nav__submenu__list">
+                  <li class="nav__submenu__item">
+                    <a
+                      href="enterprise-newsrooms.html"
+                      class="nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a
+                      href="digital-asset-management.html"
+                      class="nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="wieck-desk.html" class="nav__submenu__link"
+                      >WIECK Desk</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="custom-development.html" class="nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <!-- /Main nav Submenu -->
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-us" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="privacy-policy.html" class="nav__link">Privacy Policy</a>
+            </li>
+          </ul>
+          <a href="#contact-us" class="button button--brand header__cta"
+            >Contact Us</a
+          >
+        </nav>
+        <!-- /Main nav -->
+
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+          <input type="checkbox" id="toggle-nav" class="mobile-nav__checkbox" />
+          <label class="mobile-nav__button size-48" for="toggle-nav">
+            <!-- Open icon -->
+            <i
+              class="ph ph-list mobile-nav__icon mobile-nav__icon--open icon"
+            ></i>
+            <!-- /Open icon -->
+            <!-- Close icon -->
+            <i
+              class="ph ph-x mobile-nav__icon mobile-nav__icon--close icon"
+            ></i>
+            <!-- /Close icon -->
+          </label>
+          <div class="mobile-nav__content">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="index.html" class="mobile-nav__link">Home</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a
+                  href="in-memory-of-james-f-wieck.html"
+                  class="mobile-nav__link"
+                >
+                  In Memory of James F. Wieck
+                </a>
+              </li>
+              <!-- Mobile Submenu -->
+              <li class="mobile-nav__item mobile-nav__item--has-submenu">
+                <label class="mobile-nav__link">
+                  <input type="checkbox" />
+
+                  <span>Services</span>
+
+                  <i
+                    class="ph ph-caret-down mobile-nav__submenu__icon icon-16"
+                  ></i>
+                </label>
+
+                <ul class="mobile-nav__submenu">
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="enterprise-newsrooms.html"
+                      class="mobile-nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="digital-asset-management.html"
+                      class="mobile-nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a href="wieck-desk.html" class="mobile-nav__submenu__link"
+                      >WIECK Desk</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="custom-development.html"
+                      class="mobile-nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- /Mobile Submenu -->
+              <li class="mobile-nav__item">
+                <a href="about.html" class="mobile-nav__link">About Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#contact-us" class="mobile-nav__link">Contact Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="privacy-policy.html" class="mobile-nav__link"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+            <div class="mobile-nav__footer">
+              <a
+                href="#contact-us"
+                class="button button--fluid button--large button--brand"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- /Mobile nav -->
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Hero section -->
+      <section class="section hero-heading-section bg-brand-primary relative">
+        <img
+          src="assets/decor/decor-rectangle.svg"
+          alt="Decor"
+          class="bg-decor"
+        />
+        <div class="container z-10 relative">
+          <h1 class="heading">Our Wieck Family Makes the Difference</h1>
+        </div>
+      </section>
+      <!-- /Hero section -->
+      <!-- About section -->
+      <section class="section about-section">
+        <div class="container">
+          <h2 class="heading-2">Our People Are Our Stories</h2>
+          <div class="about-section__content">
+            <!-- About section left -->
+            <div class="about-section__left">
+              <p>
+                We exist to help the world’s best news organizations and public
+                relations, marketing and communications teams share and monitor
+                their stories. We don’t mean to toot our own horn, but we’re
+                kind of like a backseat driver people actually like. Pushing
+                pedal to metal, we’re racing against industry standards to see
+                how far we can take our clients. Maybe it’s why The New York
+                Times News Service, our very first client, has remained with us
+                since May of 1991, when we dramatically sped up their photo
+                distribution process.
+              </p>
+            </div>
+            <!-- /About section left -->
+            <!-- About section middle -->
+            <div class="about-section__middle">
+              <div class="image-rotate">
+                <img src="assets/images/our-story.jpg" alt="Our Story" />
+              </div>
+            </div>
+            <!-- /About section middle -->
+            <!-- About section right -->
+            <div class="about-section__right">
+              <p>
+                A trusted content adviser to Fortune 500 companies, we’re a
+                company founded on principles of long-time photojournalists,
+                editors and media producers. Deadline-oriented and
+                customer-centric, we are solution finders who strive to surpass
+                our client’s needs. Whether it’s web development, content
+                management or multimedia production, Wieck has the technology
+                and people power needed to communicate your message to the world
+                in a timely, compelling manner.
+              </p>
+              <p>
+                Relentlessly seeking better solutions for clients, the Wieck
+                family consists of passionate professionals who join forces to
+                make Wieck the cutting-edge company it is.
+              </p>
+            </div>
+            <!-- /About section right -->
+          </div>
+        </div>
+      </section>
+      <!-- /About section -->
+
+      <!-- Team section -->
+      <section class="section bg-secondary">
+        <div class="container">
+          <h2 class="heading-2">Meet The Team</h2>
+          <p class="subheading">
+            At Wieck, we value our ability to back up artificial intelligence
+            with human intelligence. That’s why we keep our team small. Our
+            intimate size allows for an open flow of communication,
+            strengthening our ability to be the fast-paced, agile company our
+            clients need us to be.
+          </p>
+          <div class="team-section__content">
+            <!-- Team member card-->
+            <div class="card card--hover card--md" data-modal-trigger>
+              <div class="card__image--full-top">
+                <!-- Team member image -->
+                <img
+                  src="assets/images/team-member-1.jpg"
+                  alt="Tim Roberts"
+                  class="team-member__image"
+                  data-modal-image
+                />
+                <!-- /Team member image -->
+              </div>
+              <!-- Team member in modal info -->
+              <div class="card__content" data-modal-info>
+                <h5>Tim Roberts</h5>
+                <p class="text-body">President & CEO</p>
+              </div>
+              <!-- /Team member in modal info -->
+              <!-- Team member in modal content  -->
+              <div hidden data-modal-content class="team-member__content">
+                <p>
+                  As an award-winning photographer with United Press
+                  International and Agence France-Presse, Tim Roberts spent a
+                  decade capturing both triumphs and tragedies on film — from
+                  Super Bowls, the Final Four, and the Olympics to natural
+                  disasters, hostage situations, and the final days of the
+                  Branch Davidian standoff. This firsthand experience as a
+                  photojournalist proved invaluable when Roberts joined Wieck in
+                  early 1991 to help launch operations for what was then known
+                  as Wieck Photo DataBase — with The New York Times as its first
+                  client.
+                </p>
+                <p>
+                  As photo editor for the enterprise, Roberts soon began looking
+                  into the new digital technology and formats available for
+                  compressing, storing, and transmitting photographs. Within six
+                  months of the startup, Roberts experimented with a system of
+                  delivery that enabled newspapers and magazines to dial in via
+                  modems and download photo files in less than one-third the
+                  time required by previous technologies. By the mid-1990s,
+                  Roberts was leading the fast-growing company’s migration to
+                  Web services.
+                </p>
+              </div>
+              <!-- /Team member in modal content  -->
+            </div>
+            <!-- /Team member card -->
+            <!-- Team member card -->
+            <div class="card card--hover card--md" data-modal-trigger>
+              <div class="card__image--full-top">
+                <!-- Team member image -->
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-placeholder.jpg"
+                  alt="Pam Roberts"
+                  data-modal-image
+                />
+                <!-- /Team member image -->
+              </div>
+              <!-- Team member in modal info -->
+              <div class="card__content" data-modal-info>
+                <h5>Pam Roberts</h5>
+                <p class="text-body">Controller</p>
+              </div>
+              <!-- /Team member in modal info -->
+              <!-- Team member in modal content  -->
+              <div hidden data-modal-content class="team-member__content">
+                <p>
+                  As an award-winning photographer with United Press
+                  International and Agence France-Presse, Tim Roberts spent a
+                  decade capturing both triumphs and tragedies on film — from
+                  Super Bowls, the Final Four, and the Olympics to natural
+                  disasters, hostage situations, and the final days of the
+                  Branch Davidian standoff. This firsthand experience as a
+                  photojournalist proved invaluable when Roberts joined Wieck in
+                  early 1991 to help launch operations for what was then known
+                  as Wieck Photo DataBase — with The New York Times as its first
+                  client.
+                </p>
+              </div>
+              <!-- /Team member in modal content  -->
+            </div>
+            <!-- /Team member card -->
+            <!-- Team member card -->
+            <div class="card card--hover card--md" data-modal-trigger>
+              <div class="card__image--full-top">
+                <!-- Team member image -->
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-placeholder.jpg"
+                  alt="Amy Smoot"
+                  data-modal-image
+                />
+                <!-- /Team member image -->
+              </div>
+              <!-- Team member in modal info -->
+              <div class="card__content" data-modal-info>
+                <h5>Amy Smoot</h5>
+                <p class="text-body">COO</p>
+              </div>
+              <!-- /Team member in modal info -->
+              <!-- Team member in modal content  -->
+              <div hidden data-modal-content class="team-member__content">
+                <p>
+                  As an award-winning photographer with United Press
+                  International and Agence France-Presse, Tim Roberts spent a
+                  decade capturing both triumphs and tragedies on film — from
+                  Super Bowls, the Final Four, and the Olympics to natural
+                  disasters, hostage situations, and the final days of the
+                  Branch Davidian standoff. This firsthand experience as a
+                  photojournalist proved invaluable when Roberts joined Wieck in
+                  early 1991 to help launch operations for what was then known
+                  as Wieck Photo DataBase — with The New York Times as its first
+                  client.
+                </p>
+              </div>
+              <!-- /Team member in modal content  -->
+            </div>
+            <!-- /Team member card -->
+          </div>
+        </div>
+      </section>
+      <!-- /About section -->
+
+      <!-- Contact section -->
+      <section class="section bg-tertiary relative" id="contact-us">
+        <img
+          src="assets/decor/decor-rectangle-reverse.svg"
+          alt="Decor"
+          class="bg-decor"
+        />
+        <div class="container z-10 relative">
+          <h2 class="heading-2 text-white">
+            Ready to Transform Your Communications?
+          </h2>
+          <p class="subheading text-secondary-reverse">
+            Join hundreds of organizations using WIECK to amplify their stories
+            and strengthen media relationships
+          </p>
+
+          <div class="contact-section__content">
+            <!-- Contact form -->
+            <form class="contact-form">
+              <div class="contact-form__left">
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Work Email"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="role"
+                    placeholder="Your Role"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+              </div>
+              <div class="contact-form__right">
+                <div class="input__wrapper">
+                  <textarea
+                    name="message"
+                    placeholder="How can we help?"
+                    class="input--large"
+                    required
+                  ></textarea>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="button button--brand button--fluid button--large"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <!-- /Contact form -->
+
+            <!-- Contact info -->
+            <div class="contact-info">
+              <div>
+                <i class="ph ph-phone-outgoing icon-48"></i>
+              </div>
+              <div>
+                <p>Or call us directly</p>
+                <h3>(972) 392-0888</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact section -->
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer container -->
+      <div class="container footer__container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <img src="assets/wieck-logo-bw.svg" alt="Wieck B&W Logo" />
+          </div>
+          <div class="footer__info">
+            <p class="text-body text-secondary">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+
+            <!-- Socials -->
+            <nav class="socials">
+              <a href="#">
+                <i class="ph ph-facebook-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-x-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-instagram-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-linkedin-logo icon"></i>
+              </a>
+            </nav>
+          </div>
+          <!-- /Socials -->
+        </div>
+
+        <div class="footer__right">
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Wieck</h4>
+            <nav class="nav nav--vertical">
+              <a href="#" class="text-secondary">In Memory of James F. Wieck</a>
+              <a href="#" class="text-secondary">About Us</a>
+              <a href="#contact-us" class="text-secondary">Contact Us</a>
+              <a href="#" class="text-secondary">Privacy Policy</a>
+            </nav>
+          </div>
+          <!-- /Footer nav -->
+
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Services</h4>
+            <nav class="nav nav--vertical">
+              <a href="#" class="text-secondary">Enterprise Newsrooms</a>
+              <a href="#" class="text-secondary">Digital Asset Management</a>
+              <a href="#" class="text-secondary">WIECK Desk</a>
+              <a href="#" class="text-secondary">Custom Development</a>
+            </nav>
+          </div>
+          <!-- /Footer nav -->
+        </div>
+      </div>
+      <!-- /Footer container -->
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <p class="text-body text-secondary">
+          © Copyright 2025 | All Rights Reserved
+        </p>
+        <nav class="nav">
+          <a href="#" class="text-secondary">Privacy Policy</a>
+          <a href="#" class="text-secondary">Terms of Service</a>
+        </nav>
+      </div>
+      <!-- /Copyright -->
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__close">
+          <i class="ph ph-x icon-16"></i>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+  </body>
+</html>

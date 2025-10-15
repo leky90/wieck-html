@@ -22,4 +22,39 @@
   color: var(--text-primary);
 }
 
+.card--hover:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+}
+
+.card--md {
+  padding: 20px;
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card__image--full-top {
+  margin: -12px;
+  margin-bottom: 0;
+}
+
+.card--md .card__image--full-top {
+  margin: -20px;
+  margin-bottom: 0;
+}
+
+.card__image--full-bottom {
+  margin: -12px;
+  margin-top: 0;
+}
+
+.card--md .card__image--full-bottom {
+  margin: -20px;
+  margin-top: 0;
+}
+
 /* /Card */

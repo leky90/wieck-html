@@ -1,0 +1,9 @@
+.privacy-policy__content {
+  max-width: 690px;
+  margin-right: auto;
+}
+
+.privacy-policy__content a {
+  color: var(--text-brand);
+  text-decoration: underline;
+}

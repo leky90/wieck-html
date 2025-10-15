@@ -4,6 +4,10 @@
   gap: 16px;
 }
 
+.team-section__content .card {
+  gap: 12px;
+}
+
 .team-section__content .card__content {
   height: 144px;
 }

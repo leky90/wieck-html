@@ -39,6 +39,10 @@
   height: 224px;
 }
 
+.service-card__content h4 {
+  margin-bottom: 8px;
+}
+
 .service-card__footer {
   margin-left: -24px;
   margin-right: -24px;

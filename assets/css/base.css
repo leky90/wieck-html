@@ -87,6 +87,10 @@ ul {
   padding-left: 24px;
 }
 
+ul ul {
+  list-style: disc;
+}
+
 hr {
   border: 1px solid var(--border-primary);
   margin: 48px 0;

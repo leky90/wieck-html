@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What is CommTech, Anyway?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts/carousel.js" defer></script>
+    <script src="assets/scripts/navigation.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container flex justify-between items-center">
+        <!-- Logo -->
+        <div class="header__logo">
+          <img src="assets/wieck-logo.svg" alt="Wieck Logo" />
+        </div>
+        <!-- /Logo -->
+
+        <!-- Main nav -->
+        <nav class="nav main-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="in-memory-of-james-f-wieck.html" class="nav__link"
+                >In Memory of James F. Wieck</a
+              >
+            </li>
+            <!-- Main nav Submenu -->
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#services" class="nav__link">
+                <span>Services</span>
+                <i class="ph ph-caret-down nav__item__icon icon-16"></i>
+              </a>
+              <nav class="nav__submenu">
+                <ul class="nav__submenu__list">
+                  <li class="nav__submenu__item">
+                    <a
+                      href="enterprise-newsrooms.html"
+                      class="nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a
+                      href="digital-asset-management.html"
+                      class="nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="wieck-desk.html" class="nav__submenu__link"
+                      >WIECK Desk</a
+                    >
+                  </li>
+                  <li class="nav__submenu__item">
+                    <a href="custom-development.html" class="nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <!-- /Main nav Submenu -->
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-us" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="privacy-policy.html" class="nav__link">Privacy Policy</a>
+            </li>
+          </ul>
+          <a href="#contact-us" class="button button--brand header__cta"
+            >Contact Us</a
+          >
+        </nav>
+        <!-- /Main nav -->
+
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+          <input type="checkbox" id="toggle-nav" class="mobile-nav__checkbox" />
+          <label class="mobile-nav__button size-48" for="toggle-nav">
+            <!-- Open icon -->
+            <i
+              class="ph ph-list mobile-nav__icon mobile-nav__icon--open icon"
+            ></i>
+            <!-- /Open icon -->
+            <!-- Close icon -->
+            <i
+              class="ph ph-x mobile-nav__icon mobile-nav__icon--close icon"
+            ></i>
+            <!-- /Close icon -->
+          </label>
+          <div class="mobile-nav__content">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="index.html" class="mobile-nav__link">Home</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a
+                  href="in-memory-of-james-f-wieck.html"
+                  class="mobile-nav__link"
+                >
+                  In Memory of James F. Wieck
+                </a>
+              </li>
+              <!-- Mobile Submenu -->
+              <li class="mobile-nav__item mobile-nav__item--has-submenu">
+                <label class="mobile-nav__link">
+                  <input type="checkbox" />
+
+                  <span>Services</span>
+
+                  <i
+                    class="ph ph-caret-down mobile-nav__submenu__icon icon-16"
+                  ></i>
+                </label>
+
+                <ul class="mobile-nav__submenu">
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="enterprise-newsrooms.html"
+                      class="mobile-nav__submenu__link"
+                      >Enterprise Newsrooms</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="digital-asset-management.html"
+                      class="mobile-nav__submenu__link"
+                      >Digital Asset Management</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a href="wieck-desk.html" class="mobile-nav__submenu__link"
+                      >WIECK Desk</a
+                    >
+                  </li>
+                  <li class="mobile-nav__submenu__item">
+                    <a
+                      href="custom-development.html"
+                      class="mobile-nav__submenu__link"
+                      >Custom Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- /Mobile Submenu -->
+              <li class="mobile-nav__item">
+                <a href="about.html" class="mobile-nav__link">About Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#contact-us" class="mobile-nav__link">Contact Us</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="privacy-policy.html" class="mobile-nav__link"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+            <div class="mobile-nav__footer">
+              <a
+                href="#contact-us"
+                class="button button--fluid button--large button--brand"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- /Mobile nav -->
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+      <section class="section bg-brand-primary relative">
+        <img
+          src="assets/decor/decor-rectangle.svg"
+          alt="Decor"
+          class="bg-decor"
+        />
+        <div class="container z-10 relative">
+          <p class="text-caption text-secondary">OCT 5, 2025</p>
+          <h1 class="heading">What is CommTech, Anyway?</h1>
+        </div>
+      </section>
+      <!-- /Hero section -->
+      <!-- Blog detail section -->
+      <section class="section">
+        <div class="container">
+          <div class="blog-detail">
+            <div class="blog-detail__content">
+              <div class="blog-detail__thumbnail">
+                <img
+                  src="assets/images/blog-detail-cover.jpg"
+                  alt="Blog Detail Cover"
+                />
+              </div>
+              <p>
+                Martech, edtech, medtech, commtech—the number of industries that
+                have added “tech” to the end of their name continues to grow.
+              </p>
+              <hr />
+              <p>
+                Listen long enough and it becomes mind-numbing. What do all
+                these things mean, anyway? And do they actually mean something
+                specific enough to warrant an entire new term?
+              </p>
+              <p>
+                Well, we can’t answer for every other industry, but in commtech,
+                the answer to that second question is: yes. Commtech actually
+                does mean something highly specific and new—it’s not the same
+                old communications work, just conducted over email or Skype.
+              </p>
+              <p>Here’s a breakdown of this term, and why it matters.</p>
+              <h4>Communications + Technology = CommTec</h4>
+              <p>
+                It’s no mystery where the name came from, but what exactly is
+                communications technology?
+              </p>
+              <p>
+                You could apply this term to all kinds of technologies that are
+                not actually part of commtech—texting, email, video
+                conferencing. Those are all technologies that help us all
+                communicate.
+              </p>
+              <p>
+                What commtech actually refers to, however, is a broad
+                combination of elements that are driven by technology, not just
+                elements of tech themselves. It’s not only the tools and
+                software themselves—it’s also the behaviors and ways of thinking
+                about communications that emerge from the usage and integration
+                of these tools into a communications strategy.
+              </p>
+              <p>
+                So, for example, one type of commtech would be the data and
+                analytics tools that PR professionals use to measure the reach
+                and impact of a piece of news coverage.
+              </p>
+              <p>
+                Another would be the web development tools that allow a brand to
+                create custom microsites on a swift turnaround, or the social
+                listening tools that allow comms staff to monitor the online
+                conversations that are relevant to the brand.
+              </p>
+              <p>
+                As The Page Society defines it, “CommTech is a new discipline in
+                our profession, a blend of new tools, systems, roles, KPIs and
+                ways of working that move the function from shaping perception
+                to driving behavior….Building a CommTech team that listens
+                through data, creates and iterates on content regularly based on
+                that data, targets people as individuals and modifies strategy
+                based on user behavior, organizations can tangibly and
+                demonstrably drive behaviors that address real business needs.”
+              </p>
+              <h4>How commtech can help your brand deliver its message</h4>
+              <p>
+                If commtech is more than just a collection of tools, but a whole
+                shift in mindset when it comes to communications, how do you
+                develop a commtech-oriented approach in your own organization?
+              </p>
+              <p>
+                One of the first steps is certainly to embrace data and
+                analytics, which you’ve likely already done. Reporting tools are
+                becoming increasingly important as a way to justify a
+                department’s spend, and that’s as true of the comms department
+                now as it’s always been of, say, the advertising department.
+              </p>
+              <p>
+                Another way to help your department move forward is to focus on
+                how you deliver your content, and how it can be streamlined.
+              </p>
+              <p>
+                In other words, how much time is your staff spending on things
+                like resizing photos or forcing your website template to
+                accommodate a piece of content that doesn’t actually fit?
+              </p>
+              <p>
+                How much time do you spend waiting for IT to fix a problem you
+                wanted fixed days ago?
+              </p>
+              <p>
+                How long are you waiting for messaging to go out to the public,
+                and how can you cut that time down?
+              </p>
+              <p>
+                Most departments these days can’t afford to hire a full-time
+                person to handle all the technical aspects of communications.
+                The other option is then to work with an outside vendor, but
+                it’s challenging to find ones that actually know both the
+                communications side and the technology side of commtech.
+              </p>
+              <p>
+                But get this: That’s literally why Wieck exists. We started back
+                in 1991, and our very first project for our very first client,
+                the New York Times News Service, was to speed up their photo
+                distribution through what was then a very new tool: the
+                internet. They had a need, and we figured out a way to fill it.
+              </p>
+              <p>
+                Since then, we’ve built our team to include staff with deep
+                expertise in journalism, communications, PR, web development,
+                and event management. Our whole passion is for marrying the best
+                of communications with the best of technology, and that’s why
+                we’ve developed offerings like:
+              </p>
+              <ul>
+                <li>
+                  Digital Content Hubs, the 21st century incarnation of the
+                  tired old digital newsroom
+                </li>
+                <li>
+                  NewStream (coming soon!), which allows brands to securely
+                  stream content to diverse audiences.
+                </li>
+                <li>
+                  Our Digital Asset Management systems, which come with 24/7
+                  human support
+                </li>
+                <li>
+                  Story Capsules, one-page websites that integrate any and every
+                  type of content you could ask for, with a four-hour turnaround
+                  time.
+                </li>
+                <li>CommTech Concierge, which is whatever our clients need.</li>
+              </ul>
+              <p>
+                We’ve been in this for a long time, and we plan to be around for
+                a lot longer. Commtech is in our blood—and it has been right
+                from the beginning. If you’re ready to see how commtech can
+                transform your comms department, give us a call.
+              </p>
+            </div>
+            <div class="blog-detail__others">
+              <h3 class="heading-2">Other Posts</h3>
+
+              <!-- Resource Card -->
+              <a href="blog-detail.html">
+                <article class="card card--primary resource-card relative">
+                  <img
+                    src="assets/decor/decor-square.svg"
+                    alt="Decor"
+                    class="decor"
+                  />
+                  <div class="resource-card__content relative z-10">
+                    <p class="text-caption text-secondary">SEP 10, 2025</p>
+                    <h5 class="text-line-clamp-2">
+                      Here’s How Live Streaming Could Transform Your Content
+                      Distribution
+                    </h5>
+                    <p class="text-body text-secondary text-line-clamp-3">
+                      Smaller budgets, higher expectations, a hyper-political
+                      media environment, a global pandemic—the road for
+                      corporate communications departments hasn’t been easy this
+                      year.
+                    </p>
+                  </div>
+                  <div class="resource-card__image">
+                    <img src="assets/images/resource-1.jpg" alt="Resource 1" />
+                  </div>
+                </article>
+              </a>
+              <!-- /Resource Card -->
+              <!-- Resource Card -->
+              <a href="blog-detail.html">
+                <article class="card card--primary resource-card relative">
+                  <img
+                    src="assets/decor/decor-square.svg"
+                    alt="Decor"
+                    class="decor"
+                  />
+                  <div class="resource-card__content relative z-10">
+                    <p class="text-caption text-secondary">SEP 10, 2025</p>
+                    <h5 class="text-line-clamp-2">
+                      Here’s How Live Streaming Could Transform Your Content
+                      Distribution
+                    </h5>
+                    <p class="text-body text-secondary text-line-clamp-3">
+                      Smaller budgets, higher expectations, a hyper-political
+                      media environment, a global pandemic—the road for
+                      corporate communications departments hasn’t been easy this
+                      year.
+                    </p>
+                  </div>
+                  <div class="resource-card__image">
+                    <img src="assets/images/resource-1.jpg" alt="Resource 1" />
+                  </div>
+                </article>
+              </a>
+              <!-- /Resource Card -->
+              <!-- Resource Card -->
+              <a href="blog-detail.html">
+                <article class="card card--primary resource-card relative">
+                  <img
+                    src="assets/decor/decor-square.svg"
+                    alt="Decor"
+                    class="decor"
+                  />
+                  <div class="resource-card__content relative z-10">
+                    <p class="text-caption text-secondary">SEP 10, 2025</p>
+                    <h5 class="text-line-clamp-2">
+                      Here’s How Live Streaming Could Transform Your Content
+                      Distribution
+                    </h5>
+                    <p class="text-body text-secondary text-line-clamp-3">
+                      Smaller budgets, higher expectations, a hyper-political
+                      media environment, a global pandemic—the road for
+                      corporate communications departments hasn’t been easy this
+                      year.
+                    </p>
+                  </div>
+                  <div class="resource-card__image">
+                    <img src="assets/images/resource-1.jpg" alt="Resource 1" />
+                  </div>
+                </article>
+              </a>
+              <!-- /Resource Card -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Blog detail section -->
+      <!-- Contact section -->
+      <section class="section bg-tertiary relative" id="contact-us">
+        <img
+          src="assets/decor/decor-rectangle-reverse.svg"
+          alt="Decor"
+          class="bg-decor"
+        />
+        <div class="container z-10 relative">
+          <h2 class="heading-2 text-white">
+            Ready to Transform Your Communications?
+          </h2>
+          <p class="subheading text-secondary-reverse">
+            Join hundreds of organizations using WIECK to amplify their stories
+            and strengthen media relationships
+          </p>
+
+          <div class="contact-section__content">
+            <!-- Contact form -->
+            <form class="contact-form">
+              <div class="contact-form__left">
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Work Email"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="role"
+                    placeholder="Your Role"
+                    class="input--large"
+                    required
+                  />
+                  <i
+                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                  ></i>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+              </div>
+              <div class="contact-form__right">
+                <div class="input__wrapper">
+                  <textarea
+                    name="message"
+                    placeholder="How can we help?"
+                    class="input--large"
+                    required
+                  ></textarea>
+                  <p class="text-error input__wrapper__message">
+                    This field is required
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="button button--brand button--fluid button--large"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <!-- /Contact form -->
+
+            <!-- Contact info -->
+            <div class="contact-info">
+              <div>
+                <i class="ph ph-phone-outgoing icon-48"></i>
+              </div>
+              <div>
+                <p>Or call us directly</p>
+                <h3>(972) 392-0888</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact section -->
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer container -->
+      <div class="container footer__container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <img src="assets/wieck-logo-bw.svg" alt="Wieck B&W Logo" />
+          </div>
+          <div class="footer__info">
+            <p class="text-body text-secondary">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+
+            <!-- Socials -->
+            <nav class="socials">
+              <a href="#">
+                <i class="ph ph-facebook-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-x-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-instagram-logo icon"></i>
+              </a>
+              <a href="#">
+                <i class="ph ph-linkedin-logo icon"></i>
+              </a>
+            </nav>
+          </div>
+          <!-- /Socials -->
+        </div>
+
+        <div class="footer__right">
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Wieck</h4>
+            <nav class="nav nav--vertical">
+              <a href="in-memory-of-james-f-wieck.html" class="text-secondary"
+                >In Memory of James F. Wieck</a
+              >
+              <a href="about.html" class="text-secondary">About Us</a>
+              <a href="#contact-us" class="text-secondary">Contact Us</a>
+              <a href="privacy-policy.html" class="text-secondary"
+                >Privacy Policy</a
+              >
+            </nav>
+          </div>
+          <!-- /Footer nav -->
+
+          <!-- Footer nav -->
+          <div class="footer__nav">
+            <h4 class="heading-4">Services</h4>
+            <nav class="nav nav--vertical">
+              <a href="enterprise-newsrooms.html" class="text-secondary"
+                >Enterprise Newsrooms</a
+              >
+              <a href="digital-asset-management.html" class="text-secondary"
+                >Digital Asset Management</a
+              >
+              <a href="wieck-desk.html" class="text-secondary">WIECK Desk</a>
+              <a href="custom-development.html" class="text-secondary"
+                >Custom Development</a
+              >
+            </nav>
+          </div>
+          <!-- /Footer nav -->
+        </div>
+      </div>
+      <!-- /Footer container -->
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <p class="text-body text-secondary">
+          © Copyright 2025 | All Rights Reserved
+        </p>
+        <nav class="nav">
+          <a href="privacy-policy.html" class="text-secondary"
+            >Privacy Policy</a
+          >
+          <a href="terms-of-service.html" class="text-secondary"
+            >Terms of Service</a
+          >
+        </nav>
+      </div>
+      <!-- /Copyright -->
+    </footer>
+    <!-- /Footer -->
+  </body>
+</html>

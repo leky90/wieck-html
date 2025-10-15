@@ -24,6 +24,7 @@
 
 .card--hover:hover {
   cursor: pointer;
+  background: var(--bg-white);
   box-shadow: var(--shadow-lg);
 }
 

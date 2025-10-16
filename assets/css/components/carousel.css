@@ -6,6 +6,27 @@
   position: relative;
 }
 
+.carousel__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel__overlay--prev {
+  left: 0;
+  background: linear-gradient(270deg, transparent 0%, #000 100%);
+}
+
+.carousel__overlay--next {
+  right: 0;
+  left: auto;
+  background: linear-gradient(270deg, #000 0%, transparent 100%);
+}
+
 .carousel__prev {
   position: absolute;
   left: 0;
@@ -38,6 +59,20 @@
 .carousel__track > div {
   flex-shrink: 0;
   width: 100%;
+}
+
+/* Images carousel specific styles */
+.carousel--images .carousel__track {
+  transform: translateX(calc(-1 * var(--translate-x, 0px)));
+  align-items: stretch;
+}
+
+.carousel--images .carousel__track > img {
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel__dots {

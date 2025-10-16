@@ -71,6 +71,8 @@
 .carousel--images .carousel__track img {
   height: 100%;
   object-fit: cover;
+  max-width: none;
+  min-width: 200px;
 }
 
 @media (min-width: 760px) {
@@ -97,6 +99,10 @@
 
   .carousel--images {
     margin-bottom: 96px;
+  }
+
+  .carousel--images .carousel__track img {
+    min-width: 300px;
   }
 }
 
@@ -154,6 +160,10 @@
 
   .carousel--images {
     margin-bottom: 144px;
+  }
+
+  .carousel--images .carousel__track img {
+    min-width: 400px;
   }
 }
 

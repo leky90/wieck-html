@@ -24,6 +24,9 @@
     const btnNext = root.querySelector(".carousel__next");
     const dotsWrap = root.querySelector(".carousel__dots");
 
+    // Check if this is an images carousel (flexible width)
+    const isImagesCarousel = root.classList.contains("carousel--images");
+
     // (Important) Rebuild dots to match the number of slides
     let dots = [];
     if (dotsWrap) {
@@ -44,14 +47,44 @@
       getComputedStyle(root).getPropertyValue("--index"),
       10
     );
-    console.log(index);
     if (Number.isNaN(index)) index = 0;
 
     const clamp = (i) => (i + slides.length) % slides.length;
 
+    // Calculate slide positions for flexible width carousel
+    function calculateSlidePositions() {
+      if (!isImagesCarousel) return;
+
+      let cumulativeWidth = 0;
+      const positions = [];
+
+      slides.forEach((slide, i) => {
+        positions[i] = cumulativeWidth;
+        cumulativeWidth += slide.offsetWidth;
+      });
+
+      return positions;
+    }
+
     function render() {
-      root.style.setProperty("--index", String(index));
-      // cập nhật dots + a11y
+      if (isImagesCarousel) {
+        // For images carousel, calculate actual positions
+        const positions = calculateSlidePositions() || [];
+        const requestedX = positions[index] || 0;
+        const viewportWidth = content.parentElement
+          ? content.parentElement.clientWidth
+          : 0;
+        const totalWidth = content.scrollWidth;
+        const maxScrollX = Math.max(0, totalWidth - viewportWidth);
+        const translateX = Math.min(requestedX, maxScrollX);
+        content.style.transform = `translateX(-${translateX}px)`;
+        root.style.setProperty("--translate-x", `${translateX}px`);
+      } else {
+        // For regular carousel, use percentage-based positioning
+        root.style.setProperty("--index", String(index));
+      }
+
+      // Update dots + a11y
       dots.forEach((d, i) => {
         d.classList.toggle("active", i === index);
         d.setAttribute("aria-current", i === index ? "true" : "false");
@@ -62,9 +95,11 @@
     }
 
     function go(i) {
+      // Wrap indices using clamp: last -> first, first -> last
       index = clamp(i);
       render();
     }
+
     const next = () => go(index + 1);
     const prev = () => go(index - 1);
 
@@ -83,6 +118,25 @@
         prev();
       }
     });
+
+    // Handle window resize and image load for images carousel
+    if (isImagesCarousel) {
+      let resizeTimeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          render();
+        }, 100);
+      });
+
+      // Re-render after each image loads to correct widths and positions
+      slides.forEach((el) => {
+        if (el.tagName === "IMG") {
+          if (el.complete) return; // already loaded
+          el.addEventListener("load", () => render(), { once: true });
+        }
+      });
+    }
 
     // Init
     render();

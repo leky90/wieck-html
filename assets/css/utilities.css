@@ -498,16 +498,16 @@
 }
 
 .image-rotate img {
-  transform: rotate(-3deg);
+  /* transform: rotate(-3deg); */
   aspect-ratio: 2/3;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
 .image-rotate--right img {
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
 }
 
 /* /Image utilities */

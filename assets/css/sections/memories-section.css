@@ -12,8 +12,8 @@
 }
 
 .memory__image {
-  max-width: 300px;
-  margin: 24px auto;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .grid-images {
@@ -37,6 +37,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 16px;
+  margin-top: 24px;
 }
 
 .grid-messages__column {
@@ -87,6 +88,11 @@
     margin: 40px 0 64px;
   }
 
+  .memory__image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .memory-message {
     gap: 24px;
   }
@@ -133,7 +139,7 @@
   }
 
   .memory__image {
-    max-width: 323px;
+    max-width: 360px;
     margin: 0;
   }
 

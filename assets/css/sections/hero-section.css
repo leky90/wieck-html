@@ -6,8 +6,15 @@
 }
 
 .hero-heading-section {
-  padding: 44px 16px;
+  height: 208px;
   position: relative;
+}
+
+.hero-heading-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-heading-section .heading {
@@ -101,7 +108,11 @@
   }
 
   .hero-heading-section {
-    padding-top: 56px;
+    height: 280px;
+  }
+
+  .hero-heading-section .heading {
+    max-width: 690px;
   }
 
   .hero-section .subheading {
@@ -144,7 +155,7 @@
   }
 
   .hero-heading-section {
-    padding-top: 80px;
+    height: 360px;
   }
 
   .grid-stats {

@@ -50,17 +50,22 @@
   margin-bottom: 80px;
 }
 
+.carousel--images img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
 .carousel--images .carousel__content {
   width: 100%;
   overflow: hidden;
 }
 
 .carousel--images .carousel__prev {
-  transform: translate(32px, -50%);
+  transform: translate(16px, -50%);
 }
 
 .carousel--images .carousel__next {
-  transform: translate(-32px, -50%);
+  transform: translate(-16px, -50%);
 }
 
 .carousel--images .carousel__content,
@@ -103,6 +108,14 @@
 
   .carousel--images .carousel__track img {
     min-width: 300px;
+  }
+
+  .carousel--images .carousel__prev {
+    transform: translate(32px, -50%);
+  }
+
+  .carousel--images .carousel__next {
+    transform: translate(-32px, -50%);
   }
 }
 

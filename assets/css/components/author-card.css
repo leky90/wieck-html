@@ -1,0 +1,31 @@
+.author-card {
+  padding: 18px 24px;
+}
+
+.author-card blockquote {
+  margin: 0;
+}
+
+.author-card blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.author-card__image {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-card__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-card__avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,125 @@
+.memory {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.memory-message {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.memory__image {
+  max-width: 300px;
+  margin: 24px auto;
+}
+
+.grid-images {
+  display: grid;
+  gap: 8px;
+}
+
+.grid-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+
+.grid-messages {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.grid-messages__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 760px) {
+  /* tablet */
+  .memory {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .memory-message {
+    gap: 24px;
+  }
+
+  .grid-images {
+    gap: 12px;
+  }
+
+  .grid-row {
+    display: grid;
+    gap: 12px;
+    height: 138px;
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .memory {
+    flex-direction: row;
+    gap: 48px;
+    justify-content: space-between;
+  }
+
+  .memory--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .memory__image {
+    max-width: 323px;
+    margin: 0;
+  }
+
+  .memory__content {
+    max-width: 690px;
+  }
+
+  .memory-message {
+    gap: 48px;
+    max-width: 690px;
+    margin: auto;
+  }
+
+  .grid-row {
+    height: 360px;
+  }
+
+  .grid-row:nth-child(2) {
+    height: 266px;
+  }
+
+  .grid-messages {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .grid-messages__column {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* desktop */
+  .grid-row {
+    overflow: hidden;
+  }
+
+  .grid-row:nth-child(2) {
+    height: 360px;
+  }
+}

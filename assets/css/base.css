@@ -104,7 +104,7 @@ caption {
 blockquote {
   border-left: 1px solid var(--text-brand);
   color: var(--text-secondary);
-  padding-left: 24px;
+  padding-left: 16px;
   margin: 24px 0;
 }
 

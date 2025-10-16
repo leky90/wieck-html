@@ -17,10 +17,23 @@
   color: var(--text-white);
 }
 
+.contact-info__wrapper {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-info--reverse {
+  color: var(--text-primary);
+}
+
 .contact-info p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 8px;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-info h3 {
@@ -55,6 +68,10 @@
   .contact-form__right {
     gap: 24px;
   }
+
+  .contact-info__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1232px) {
@@ -71,6 +88,13 @@
 
   .contact-info {
     margin-top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
 }
 

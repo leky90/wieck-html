@@ -36,6 +36,7 @@
         b.className = "carousel__dot";
         b.type = "button";
         b.innerHTML = "<span></span>"; // match with current CSS
+        // enable dot navigation for both modes
         b.addEventListener("click", () => go(i));
         dotsWrap.appendChild(b);
       });
@@ -51,57 +52,131 @@
 
     const clamp = (i) => (i + slides.length) % slides.length;
 
-    // Calculate slide positions for flexible width carousel
-    function calculateSlidePositions() {
-      if (!isImagesCarousel) return;
+    // Helpers for images carousel seamless loop
+    let logicalIndex = 0; // for dots only
+    let isAnimating = false;
+    const originalCount = slides.length;
 
-      let cumulativeWidth = 0;
-      const positions = [];
-
-      slides.forEach((slide, i) => {
-        positions[i] = cumulativeWidth;
-        cumulativeWidth += slide.offsetWidth;
+    function updateDots() {
+      dots.forEach((d, i) => {
+        const active =
+          i ===
+          ((logicalIndex % originalCount) + originalCount) % originalCount;
+        d.classList.toggle("active", active);
+        d.setAttribute("aria-current", active ? "true" : "false");
       });
+    }
 
-      return positions;
+    function animateTo(targetX, onDone) {
+      content.style.transition = "transform 300ms ease";
+      content.style.transform = `translateX(-${targetX}px)`;
+      const handler = () => {
+        content.removeEventListener("transitionend", handler);
+        onDone?.();
+      };
+      content.addEventListener("transitionend", handler);
+    }
+
+    function nextImages() {
+      if (isAnimating) return;
+      isAnimating = true;
+      const first = slides[0];
+      const shift = first.offsetWidth;
+      animateTo(shift, () => {
+        content.style.transition = "none";
+        content.appendChild(first);
+        slides.push(slides.shift());
+        content.style.transform = "translateX(0px)";
+        logicalIndex = (logicalIndex + 1) % originalCount;
+        updateDots();
+        isAnimating = false;
+      });
+    }
+
+    function prevImages() {
+      if (isAnimating) return;
+      isAnimating = true;
+      const last = slides[slides.length - 1];
+      const shift = last.offsetWidth;
+      content.style.transition = "none";
+      content.insertBefore(last, slides[0]);
+      slides.unshift(slides.pop());
+      content.style.transform = `translateX(-${shift}px)`;
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          animateTo(0, () => {
+            content.style.transition = "none";
+            content.style.transform = "translateX(0px)";
+            logicalIndex = (logicalIndex - 1 + originalCount) % originalCount;
+            updateDots();
+            isAnimating = false;
+          });
+        });
+      });
+    }
+
+    // Instant jump to target logical index (dot click) without sliding through
+    function jumpTo(target) {
+      if (!isImagesCarousel) return;
+      const normalizedTarget =
+        ((target % originalCount) + originalCount) % originalCount;
+      let delta =
+        (normalizedTarget - logicalIndex + originalCount) % originalCount;
+      if (delta === 0) return;
+      content.style.transition = "none";
+      // Rotate DOM in the shorter direction but instantly (no animation frames)
+      if (delta <= originalCount / 2) {
+        while (delta-- > 0) {
+          const first = slides[0];
+          content.appendChild(first);
+          slides.push(slides.shift());
+        }
+      } else {
+        let steps = originalCount - delta;
+        while (steps-- > 0) {
+          const last = slides[slides.length - 1];
+          content.insertBefore(last, slides[0]);
+          slides.unshift(slides.pop());
+        }
+      }
+      content.style.transform = "translateX(0px)";
+      logicalIndex = normalizedTarget;
+      updateDots();
     }
 
     function render() {
       if (isImagesCarousel) {
-        // For images carousel, calculate actual positions
-        const positions = calculateSlidePositions() || [];
-        const requestedX = positions[index] || 0;
-        const viewportWidth = content.parentElement
-          ? content.parentElement.clientWidth
-          : 0;
-        const totalWidth = content.scrollWidth;
-        const maxScrollX = Math.max(0, totalWidth - viewportWidth);
-        const translateX = Math.min(requestedX, maxScrollX);
-        content.style.transform = `translateX(-${translateX}px)`;
-        root.style.setProperty("--translate-x", `${translateX}px`);
+        // Images carousel: enforce left-edge alignment at init
+        content.style.transition = "none";
+        content.style.transform = "translateX(0px)";
+        root.style.setProperty("--translate-x", "0px");
+        updateDots();
       } else {
         // For regular carousel, use percentage-based positioning
         root.style.setProperty("--index", String(index));
+        // Update dots + a11y
+        dots.forEach((d, i) => {
+          d.classList.toggle("active", i === index);
+          d.setAttribute("aria-current", i === index ? "true" : "false");
+        });
+        slides.forEach((el, i) =>
+          el.setAttribute("aria-hidden", i === index ? "false" : "true")
+        );
       }
-
-      // Update dots + a11y
-      dots.forEach((d, i) => {
-        d.classList.toggle("active", i === index);
-        d.setAttribute("aria-current", i === index ? "true" : "false");
-      });
-      slides.forEach((el, i) =>
-        el.setAttribute("aria-hidden", i === index ? "false" : "true")
-      );
     }
 
     function go(i) {
-      // Wrap indices using clamp: last -> first, first -> last
-      index = clamp(i);
-      render();
+      if (isImagesCarousel) {
+        // Dot click or programmatic jump: reposition instantly without per-slide animation
+        jumpTo(i);
+      } else {
+        index = clamp(i);
+        render();
+      }
     }
 
-    const next = () => go(index + 1);
-    const prev = () => go(index - 1);
+    const next = () => (isImagesCarousel ? nextImages() : go(index + 1));
+    const prev = () => (isImagesCarousel ? prevImages() : go(index - 1));
 
     btnNext?.addEventListener("click", next);
     btnPrev?.addEventListener("click", prev);
@@ -125,15 +200,15 @@
       window.addEventListener("resize", () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-          render();
+          // No-op: layout adjusts automatically since we use DOM reordering
         }, 100);
       });
 
-      // Re-render after each image loads to correct widths and positions
+      // Ensure initial dots state after images load
       slides.forEach((el) => {
         if (el.tagName === "IMG") {
           if (el.complete) return; // already loaded
-          el.addEventListener("load", () => render(), { once: true });
+          el.addEventListener("load", () => updateDots(), { once: true });
         }
       });
     }

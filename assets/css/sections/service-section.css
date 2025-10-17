@@ -9,7 +9,6 @@
 .service-card {
   padding: 24px;
   overflow: hidden;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 

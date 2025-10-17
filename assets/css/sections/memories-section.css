@@ -69,6 +69,10 @@
   height: 100%;
 }
 
+.carousel--images .carousel__track img {
+  aspect-ratio: 1/1;
+}
+
 @media (min-width: 760px) {
   /* tablet */
   .memory {
@@ -106,6 +110,10 @@
 
   .carousel--images .carousel__next {
     transform: translate(-32px, -50%);
+  }
+
+  .carousel--images .carousel__track img {
+    aspect-ratio: auto;
   }
 }
 

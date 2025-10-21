@@ -15,13 +15,14 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
     />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts/carousel.js" defer></script>
     <script src="assets/scripts/navigation.js" defer></script>
     <script src="assets/scripts/hero-stats.js" defer></script>
     <script src="assets/scripts/resource-toggle.js" defer></script>
+    <script src="assets/scripts/toast.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -71,12 +72,12 @@
           <label class="mobile-nav__button size-48" for="toggle-nav">
             <!-- Open icon -->
             <i
-              class="ph ph-list mobile-nav__icon mobile-nav__icon--open icon"
+              class="ph-light ph-list mobile-nav__icon mobile-nav__icon--open icon"
             ></i>
             <!-- /Open icon -->
             <!-- Close icon -->
             <i
-              class="ph ph-x mobile-nav__icon mobile-nav__icon--close icon"
+              class="ph-light ph-x mobile-nav__icon mobile-nav__icon--close icon"
             ></i>
             <!-- /Close icon -->
           </label>
@@ -226,6 +227,7 @@
               />
               <div class="service-card__content relative z-10">
                 <div class="service-card__icon">
+                  <i class="ph-light ph-newspaper icon-48 text-brand"></i>
                   <i class="ph ph-newspaper icon-48 text-brand"></i>
                 </div>
                 <h4>Enterprise Newsrooms</h4>
@@ -251,7 +253,7 @@
               />
               <div class="service-card__content relative z-10">
                 <div class="service-card__icon">
-                  <i class="ph ph-gear icon-48 text-brand"></i>
+                  <i class="ph-light ph-gear icon-48 text-brand"></i>
                 </div>
                 <h4>Digital Asset Management</h4>
                 <p class="text-body text-secondary">
@@ -276,7 +278,7 @@
               />
               <div class="service-card__content relative z-10">
                 <div class="service-card__icon">
-                  <i class="ph ph-desktop icon-48 text-brand"></i>
+                  <i class="ph-light ph-desktop icon-48 text-brand"></i>
                 </div>
                 <h4>WIECK Desk</h4>
                 <p class="text-body text-secondary">
@@ -298,7 +300,9 @@
               />
               <div class="service-card__content relative z-10">
                 <div class="service-card__icon">
-                  <i class="ph ph-chart-bar-horizontal icon-48 text-brand"></i>
+                  <i
+                    class="ph-light ph-chart-bar-horizontal icon-48 text-brand"
+                  ></i>
                 </div>
                 <h4>Custom Development</h4>
                 <p class="text-body text-secondary">
@@ -332,10 +336,10 @@
           <div class="carousel">
             <!-- Carousel Nav -->
             <button class="carousel__prev button button--icon button--outline">
-              <i class="ph ph-arrow-left icon"></i>
+              <i class="ph-light ph-arrow-left icon"></i>
             </button>
             <button class="carousel__next button button--icon button--outline">
-              <i class="ph ph-arrow-right icon"></i>
+              <i class="ph-light ph-arrow-right icon"></i>
             </button>
             <!-- /Carousel Nav -->
 
@@ -560,7 +564,7 @@
       <section class="section partners-section bg-tertiary">
         <div class="container">
           <h3 class="partners-section__heading">
-            <i class="ph ph-seal-check icon-32 text-success"></i>
+            <i class="ph-light ph-seal-check icon-32 text-success"></i>
             Trusted by 500+ Enterprise Newsrooms
           </h3>
           <div class="grid-partners">
@@ -929,7 +933,7 @@
           <div class="faq-section__left">
             <h2 class="heading-2">Frequently Asked Questions</h2>
             <div class="faq-section__info">
-              <i class="ph ph-question icon-48"></i>
+              <i class="ph-light ph-question icon-48"></i>
               <div>
                 <h3 class="heading-3">Still have a question?</h3>
                 <p class="text-body text-secondary">
@@ -958,7 +962,7 @@
                 <label class="accordion__label" for="faq-1">
                   Does WIECK provide analytics?
                   <span class="accordion__chev">
-                    <i class="ph ph-caret-down icon-16"></i>
+                    <i class="ph-light ph-caret-down icon-16"></i>
                   </span>
                 </label>
                 <div class="accordion__panel">
@@ -1000,7 +1004,7 @@
                   How is WIECK different from other content management
                   platforms?
                   <span class="accordion__chev">
-                    <i class="ph ph-caret-down icon-16"></i>
+                    <i class="ph-light ph-caret-down icon-16"></i>
                   </span>
                 </label>
                 <div class="accordion__panel">
@@ -1031,7 +1035,7 @@
                 <label class="accordion__label" for="faq-3">
                   What products does WIECK offer?
                   <span class="accordion__chev">
-                    <i class="ph ph-caret-down icon-16"></i>
+                    <i class="ph-light ph-caret-down icon-16"></i>
                   </span>
                 </label>
                 <div class="accordion__panel">
@@ -1062,7 +1066,7 @@
                 <label class="accordion__label" for="faq-4">
                   Can WIECK customize solutions for my company’s needs?
                   <span class="accordion__chev">
-                    <i class="ph ph-caret-down icon-16"></i>
+                    <i class="ph-light ph-caret-down icon-16"></i>
                   </span>
                 </label>
                 <div class="accordion__panel">
@@ -1093,7 +1097,7 @@
                 <label class="accordion__label" for="faq-5">
                   How does WIECK support crisis communication?
                   <span class="accordion__chev">
-                    <i class="ph ph-caret-down icon-16"></i>
+                    <i class="ph-light ph-caret-down icon-16"></i>
                   </span>
                 </label>
                 <div class="accordion__panel">
@@ -1138,7 +1142,13 @@
 
           <div class="contact-section__content">
             <!-- Contact form -->
-            <form class="contact-form">
+            <form
+              class="contact-form"
+              onsubmit="
+                event.preventDefault(); 
+                Toast.show({ type: 'success', title: 'Submission Successful', message: 'Your message has been sent successfully' });
+              "
+            >
               <div class="contact-form__left">
                 <div class="input__wrapper">
                   <input
@@ -1149,7 +1159,7 @@
                     required
                   />
                   <i
-                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                    class="input__wrapper__icon ph-light ph-warning-circle icon-16 text-error"
                   ></i>
                   <p class="text-error input__wrapper__message">
                     This field is required
@@ -1164,7 +1174,7 @@
                     required
                   />
                   <i
-                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                    class="input__wrapper__icon ph-light ph-warning-circle icon-16 text-error"
                   ></i>
                   <p class="text-error input__wrapper__message">
                     This field is required
@@ -1179,7 +1189,7 @@
                     required
                   />
                   <i
-                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                    class="input__wrapper__icon ph-light ph-warning-circle icon-16 text-error"
                   ></i>
                   <p class="text-error input__wrapper__message">
                     This field is required
@@ -1194,7 +1204,7 @@
                     required
                   />
                   <i
-                    class="input__wrapper__icon ph ph-warning-circle icon-16 text-error"
+                    class="input__wrapper__icon ph-light ph-warning-circle icon-16 text-error"
                   ></i>
                   <p class="text-error input__wrapper__message">
                     This field is required
@@ -1223,10 +1233,26 @@
             </form>
             <!-- /Contact form -->
 
+            <!-- Toast -->
+            <div class="toast toast--bottom-right toast--success">
+              <i class="ph-light ph-check-circle icon-32"></i>
+              <div>
+                <h6 class="heading-6 toast__title"></h6>
+                <p class="text-body text-secondary toast__message"></p>
+              </div>
+              <button
+                class="toast__close button button--outline button--icon"
+                onclick="Toast.hide()"
+              >
+                <i class="ph-light ph-x icon-24"></i>
+              </button>
+            </div>
+            <!-- /Toast -->
+
             <!-- Contact info -->
             <div class="contact-info">
               <div>
-                <i class="ph ph-phone-outgoing icon-48"></i>
+                <i class="ph-light ph-phone-outgoing icon-48"></i>
               </div>
               <div>
                 <p>Or call us directly</p>
@@ -1258,16 +1284,16 @@
             <!-- Socials -->
             <nav class="socials">
               <a href="#">
-                <i class="ph ph-facebook-logo icon"></i>
+                <i class="ph-light ph-facebook-logo icon"></i>
               </a>
               <a href="#">
-                <i class="ph ph-x-logo icon"></i>
+                <i class="ph-light ph-x-logo icon"></i>
               </a>
               <a href="#">
-                <i class="ph ph-instagram-logo icon"></i>
+                <i class="ph-light ph-instagram-logo icon"></i>
               </a>
               <a href="#">
-                <i class="ph ph-linkedin-logo icon"></i>
+                <i class="ph-light ph-linkedin-logo icon"></i>
               </a>
             </nav>
           </div>

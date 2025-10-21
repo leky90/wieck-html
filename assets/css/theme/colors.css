@@ -12,12 +12,15 @@
   --color-brand-700: #056187;
   --color-brand-800: #004b6e;
 
+  --color-error-bg: #fffbfa;
   --color-error-light: #d92d20;
   --color-error-dark: #f97066;
 
+  --color-success-bg: #f6fef9;
   --color-success-light: #079455;
   --color-success-dark: #47cd89;
 
+  --color-warning-bg: #fffcf5;
   --color-warning-light: #dc6803;
   --color-warning-dark: #fdb022;
 
@@ -45,6 +48,9 @@
   --text-tertiary: var(--color-gray-200);
   --text-disabled: var(--color-gray-500);
   --text-placeholder: var(--color-gray-400);
+  --text-success: var(--color-success-light);
+  --text-error: var(--color-error-light);
+  --text-warning: var(--color-warning-light);
 
   /* Background Colors */
   --bg-white: var(--color-white);
@@ -65,6 +71,9 @@
   --bg-tertiary: var(--color-gray-950);
   --bg-quaternary: var(--color-gray-900);
   --bg-disabled: var(--color-gray-100);
+  --bg-success: var(--color-success-bg);
+  --bg-error: var(--color-error-bg);
+  --bg-warning: var(--color-warning-bg);
 
   /* Border Colors */
   --border-brand: var(--color-brand);

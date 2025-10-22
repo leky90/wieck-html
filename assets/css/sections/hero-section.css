@@ -3,6 +3,7 @@
   padding-top: 48px;
   position: relative;
   border-bottom: 3px solid var(--border-brand-tertiary);
+  overflow: hidden;
 }
 
 .hero-heading-section {
@@ -59,6 +60,12 @@
   position: relative;
   overflow: hidden;
   transition: color 0.1s ease-in-out;
+  transform: translateY(100%);
+  transition: transform 1s ease-out;
+}
+
+.card-stat--active {
+  transform: translateY(0);
 }
 
 .card-stat h5 {
@@ -69,7 +76,7 @@
   transition: color 0.1s ease-in-out;
 }
 
-.card-stat:hover {
+.card-stat {
   background-image:
     linear-gradient(180deg, #056187 10%, rgba(5, 97, 135, 0.2) 100%),
     var(--image);
@@ -87,7 +94,7 @@
 }
 
 .card-stat:hover .card-stat__icon {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .card-stat__icon {
@@ -99,6 +106,7 @@
   right: 0;
   bottom: 0;
   transform: translate(16px, 24px);
+  display: none;
 }
 
 @media (min-width: 760px) {

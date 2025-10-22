@@ -54,6 +54,12 @@
       el.textContent = `${(0).toFixed(decimals)}${suffix}`;
       animateValue(el, target, decimals, suffix, duration);
     });
+
+    // Add active class to card-stat elements
+    const cardStats = document.querySelectorAll(".card-stat");
+    cardStats.forEach((card) => {
+      card.classList.add("card-stat--active");
+    });
   };
 
   if (document.readyState === "loading") {

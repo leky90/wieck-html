@@ -23,13 +23,6 @@
 
 .modal .team-member__image {
   max-width: 168px;
-  margin-bottom: 16px;
-}
-
-.modal .team-member__content {
-  padding-top: 16px;
-  margin-top: 16px;
-  border-top: 1px solid var(--border-primary);
 }
 
 @media (min-width: 760px) {

@@ -14,12 +14,27 @@
 }
 
 .modal__container {
-  max-width: 766px;
+  max-width: 640px;
   max-height: calc(100% - 88px);
   overflow: auto;
   padding: 16px;
   position: relative;
   background-color: var(--bg-white);
+  display: flex;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.modal__header {
+  flex-grow: 1;
+}
+
+.modal__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .modal__close {
@@ -45,5 +60,14 @@
 
   .modal__container {
     max-height: calc(100% - 120px);
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1232px) {
+  /* desktop */
+  .modal__container {
+    max-height: calc(100% - 56px);
+    padding: 40px;
   }
 }

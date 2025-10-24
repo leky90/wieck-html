@@ -114,7 +114,8 @@
     gap: 24px;
   }
 
-  .grid-images {
+  .grid-images,
+  .grid-row {
     gap: 12px;
   }
 
@@ -183,6 +184,11 @@
     gap: 48px;
     max-width: 690px;
     margin: auto;
+  }
+
+  .grid-images,
+  .grid-row {
+    gap: 16px;
   }
 
   .grid-row--4,

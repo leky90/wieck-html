@@ -81,7 +81,9 @@
       if (isAnimating) return;
       isAnimating = true;
       const first = slides[0];
-      const shift = first.offsetWidth;
+      // Get gap value from CSS computed style
+      const gap = parseInt(getComputedStyle(content).gap) || 0;
+      const shift = first.offsetWidth + gap;
       animateTo(shift, () => {
         content.style.transition = "none";
         content.appendChild(first);
@@ -97,7 +99,9 @@
       if (isAnimating) return;
       isAnimating = true;
       const last = slides[slides.length - 1];
-      const shift = last.offsetWidth;
+      // Get gap value from CSS computed style
+      const gap = parseInt(getComputedStyle(content).gap) || 0;
+      const shift = last.offsetWidth + gap;
       content.style.transition = "none";
       content.insertBefore(last, slides[0]);
       slides.unshift(slides.pop());

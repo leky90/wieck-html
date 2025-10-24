@@ -75,6 +75,7 @@
 .carousel--images .carousel__track {
   transform: translateX(calc(-1 * var(--translate-x, 0px)));
   align-items: stretch;
+  gap: 8px;
 }
 
 .carousel--images .carousel__track > img {
@@ -152,6 +153,10 @@
       rgba(0, 0, 0, 0) 100%
     );
   }
+
+  .carousel--images .carousel__track {
+    gap: 12px;
+  }
 }
 
 @media (min-width: 1232px) {
@@ -162,6 +167,10 @@
 
   .carousel__next {
     transform: translate(80px, -50%);
+  }
+
+  .carousel--images .carousel__track {
+    gap: 16px;
   }
 }
 

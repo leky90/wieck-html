@@ -58,6 +58,11 @@
     padding: 60px 32px;
   }
 
+  .modal__header h5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
   .modal__container {
     max-height: calc(100% - 120px);
     padding: 24px;
